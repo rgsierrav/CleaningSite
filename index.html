@@ -8,41 +8,103 @@
 </head>
 <body>
     <header>
-        <h1>Natural Cleaning Company</h1>
+        <h1>Professional Natural Cleaning</h1>
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#quote-form">Get a Quote</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header>    
 
     <section id="services">
         <h2>Our Services</h2>
-        <!-- Add service details with placeholders -->
+        <ul>
+            <li>General Cleaning (Excluding Laundry Room)</li>
+            <li>Floor Cleaning (Vacuuming, No Carpets)</li>
+            <li>Commercial Cleaning</li>
+            <li>Residential Cleaning</li>
+            <li>Post-Construction Cleaning</li>
+        </ul>
     </section>
-
+    
     <section id="reviews">
         <h2>Customer Reviews</h2>
-        <!-- Reviews will be loaded here by JS -->
-        <div id="reviews-container"></div>
-    </section>
+        <div class="review">
+            <p class="client-name">John Doe</p>
+            <p class="review-content">"Excellent service, very professional and eco-friendly!"</p>
+        </div>
+        <!-- Additional static reviews go here -->
+    
+        <h3>Submit Your Review</h3>
+        <form id="reviewForm" netlify>
+            <label for="reviewerName">Your Name:</label>
+            <input type="text" id="reviewerName" name="reviewerName" required>
 
-    <section id="products">
-        <h2>Natural Products We Use</h2>
-        <!-- Add product details with placeholders -->
+            <label for="rating">Rating:</label>
+            <div class="rating" id="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+            </div>
+
+            <label for="reviewContent">Your Review:</label>
+            <textarea id="reviewContent" name="reviewContent" required></textarea>
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </section>    
+
+    <section id="get-in-touch">
+        <h2>Get in Contact for a Quote</h2>
+        <p>Fill out the form below with details of your property, and we'll get in touch with you to provide a personalized quote.</p>
+        <form id="contactForQuoteForm" netlify enctype="multipart/form-data">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" min="1" required>
+            
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" min="1" required>
+            
+            <label for="livingRooms">Living Rooms:</label>
+            <input type="number" id="livingRooms" name="livingRooms" min="1" required>
+            
+            <label for="kitchen">Kitchen:</label>
+            <input type="checkbox" id="kitchen" name="kitchen">
+            
+            <label for="diningRooms">Dining Rooms:</label>
+            <input type="number" id="diningRooms" name="diningRooms" min="1" required>
+            
+            <label for="additionalDetails">Additional Details:</label>
+            <textarea id="additionalDetails" name="additionalDetails"></textarea>
+    
+            <label for="roomPictures">Include Room Pictures:</label>
+            <input type="file" id="roomPictures" name="roomPictures" accept="image/*" multiple>
+    
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <!-- Add contact form -->
-    </section>
+        <!-- Contact details or a contact form -->
+    </section>    
 
     <footer>
-        <p>&copy; 2024 Natural Cleaning Company</p>
-    </footer>
+        <p>&copy; 2024 Professional Natural Cleaning. All rights reserved.</p>
+    </footer>    
 
     <script src="scripts.js"></script>
 </body>
