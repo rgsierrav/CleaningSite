@@ -10,7 +10,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
     gap: 20px;
     justify-content: center; /* Center grid items */
-    max-width: 800px; /* Adjust this value as needed */
+    max-width: 900px; /* Adjust this value as needed */
     margin: auto; /* Center the grid in the section */
 }
 
