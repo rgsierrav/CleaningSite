@@ -7,11 +7,11 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+    grid-template-columns: repeat(5, 1fr); /* Adjust number of columns based on number of services */
     gap: 20px;
-    justify-content: center; /* Center grid items */
-    max-width: 900px; /* Adjust this value as needed */
-    margin: auto; /* Center the grid in the section */
+    justify-content: center;
+    max-width: 100%; /* Ensure grid takes full width */
+    margin: auto;
 }
 
 .service-item {
