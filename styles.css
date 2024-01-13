@@ -6,8 +6,8 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min-width as needed */
+    gap: 20px;
 }
 
 .service-item {
