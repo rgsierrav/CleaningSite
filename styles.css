@@ -1,13 +1,17 @@
 /* Services Section */
 #services {
+    text-align: center; /* Center content inside the services section */
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto; /* Center the section on the page */
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min-width as needed */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
     gap: 20px;
+    justify-content: center; /* Center grid items */
+    max-width: 800px; /* Adjust this value as needed */
+    margin: auto; /* Center the grid in the section */
 }
 
 .service-item {
