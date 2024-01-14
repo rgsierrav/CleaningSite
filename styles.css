@@ -1,49 +1,46 @@
 header {
-    background-color: #8FBC8F; /* Sets the header background color */
-    padding: 10px 20px; /* Adds padding inside the header */
-    position: relative; /* Needed for absolute positioning of the logo */
+    background-color: #f4f4f4; /* Light grey background, or any color you prefer */
+    padding: 10px 20px; /* Provides padding within the header */
 }
 
 .header-top {
     display: flex; /* Aligns children (logo and title) in a row */
-    justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers children vertically */
+    justify-content: center; /* Centers horizontally */
+    padding-bottom: 10px; /* Adds some space above the navigation */
 }
 
 #header-logo {
     height: 50px; /* Adjust the logo size as needed */
     position: absolute; /* Absolute positioning relative to header */
-    left: 20px; /* Logo position from the left */
+    left: 20px; /* Adjust based on your padding */
     top: 50%; /* Centers vertically */
     transform: translateY(-50%); /* Offset by half its height for perfect centering */
 }
 
 h1 {
     margin: 0; /* Removes default margin from h1 */
-    padding-left: 60px; /* Adds padding to the left of h1 to make room for the logo */
 }
 
 nav {
     text-align: center; /* Centers the navigation */
-    margin-top: 10px; /* Adds space between the header-top and nav */
 }
 
 nav ul {
     list-style: none; /* Removes default list styling */
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
-    display: flex; /* Aligns menu items in a row */
-    justify-content: center; /* Centers the menu items */
+    display: inline-block; /* Allows the list to be centered */
 }
 
 nav ul li {
-    margin: 0 15px; /* Adjust the space between the menu items */
+    display: inline; /* Displays the list items inline */
+    margin-right: 20px; /* Adjust the space between the menu items */
 }
 
 nav ul li a {
     text-decoration: none; /* Removes underline from links */
-    color: white; /* Sets text color for links */
-    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Dark text color for links */
 }
 
 /* Services Section */
