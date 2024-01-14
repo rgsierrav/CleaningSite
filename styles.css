@@ -1,31 +1,53 @@
 header {
     background-color: #f4f4f4; /* Light grey background, or any color you prefer */
     padding: 10px 20px; /* Provides padding within the header */
+    position: relative; /* Needed for absolute positioning of the logo */
 }
 
 .header-top {
     display: flex; /* Aligns children (logo and title) in a row */
     align-items: center; /* Centers children vertically */
-    justify-content: flex-start; /* Aligns children to the start, which is left */
+    justify-content: center; /* Centers the title horizontally */
     padding-bottom: 10px; /* Adds some space above the navigation */
+    position: relative; /* Needed for absolute positioning of the logo */
 }
 
 #header-logo {
-    height: 50px; /* Adjust the logo size as needed */
+    width: 100px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
     background-color: #ffffff; /* White background for the logo */
-    padding-right: 20px; /* Adds some space between the logo and the title */
-    border: 3px solid #ccc; /* Adds a border around the logo, adjust color and width as desired */
-    margin-right: 20px; /* Adjust space between the logo and the title */
-    box-sizing: border-box; /* Includes padding and border in the width and height */
+    border: 3px solid #ccc; /* Border around the logo */
+    position: absolute; /* Absolute positioning relative to the header */
+    left: 20px; /* Position logo from the left */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Center logo vertically */
 }
 
 h1 {
     margin: 0; /* Removes default margin from h1 */
-    padding: 0 0 0 60px; /* Adds padding on the left to make space for the logo */
+    padding: 0; /* No padding needed as we center using flex */
+    flex-grow: 1; /* Allows the title to grow and fill available space */
 }
 
 nav {
     text-align: center; /* Centers the navigation */
+}
+
+nav ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns the list horizontally */
+    justify-content: center; /* Centers the list */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust the space between the menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color for links */
 }
 
 /* Services Section */
