@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    background: white; /* Ensures background is white */
+    /* background: white; Ensures background is white */
     color: #333; /* Dark color for text to ensure visibility */
     padding: 0.8rem 2rem; /* Sufficient padding for clickable area */
     border-radius: 25px; /* Rounded corners for buttons */
