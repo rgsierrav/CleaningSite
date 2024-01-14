@@ -318,42 +318,34 @@ padding: 1rem 0;
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) { /* Adjust as per your design's needs */
-    header {
-        padding: 10px; /* Reduced padding */
-    }
-
+@media screen and (max-width: 768px) {
     .header-top {
         justify-content: flex-start; /* Aligns logo to the left */
     }
 
     #header-logo {
-        width: 40px; /* Smaller logo for mobile */
-        left: 10px; /* Position closer to the edge */
-        top: 10px; /* Adjust top position */
-        transform: none; /* Disable vertical centering */
-        padding-top: 0; /* Remove additional padding */
+        left: 10px; /* Keeps logo close to the edge */
+        top: 5px; /* Adjusts top position */
+        height: 40px; /* Smaller logo for mobile */
     }
 
     h1 {
-        font-size: 18px; /* Smaller text for the title */
-        text-align: left; /* Aligns the text to the left */
-        padding-left: 60px; /* Provides space for the logo */
+        font-size: 1.2rem; /* Smaller font size for the title */
+        text-align: left; /* Aligns the title text to the left */
+        padding: 0 50px 0 60px; /* Adds padding to the left side of the title */
     }
 
     nav ul {
-        flex-direction: column; /* Stacks the nav items */
-        align-items: flex-start; /* Aligns items to the start */
+        flex-direction: column; /* Stacks nav items vertically */
+        align-items: flex-start; /* Aligns nav items to the left */
+        margin-top: 60px; /* Adds space at the top to avoid overlap with the title */
     }
 
     nav ul li {
-        display: block; /* Each item takes the full width */
-        margin: 5px 0; /* Space between items */
+        margin: 5px 0; /* Space between stacked nav items */
     }
 
     nav ul li a {
-        display: block; /* Full area clickable */
+        padding: 5px; /* Larger click area for links */
     }
-
-    /* Add any other responsive adjustments here */
 }
