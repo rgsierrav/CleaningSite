@@ -220,17 +220,29 @@ background-color: #8FBC8F;
 
 /* Style for Yes/No Radio Buttons */
 form .yes-no-options {
-display: flex;
-justify-content: start;
-gap: 10px;
+    display: flex;
+    align-items: center;
 }
 
 form .yes-no-options input[type="radio"] {
-margin-right: 5px;
+    margin-right: 5px;
 }
 
 form .yes-no-options label {
-margin-right: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for Number Inputs */
+form input[type="number"] {
+    /* Standard appearance property - may not be necessary for simple styling */
+    appearance: textfield; 
+    -webkit-appearance: textfield; /* For WebKit browsers */
+    -moz-appearance: textfield;    /* For Mozilla browsers */
+
+    margin: 0;
+    border: 2px solid #8FBC8F; /* Adds a border */
+    padding: 5px; /* Adds padding inside the input */
+    font-size: 1em; /* Adjust font size as needed */
 }
 
 /* Footer */
