@@ -14,7 +14,7 @@ header {
 
 /* Styles for the header image with a smaller white box */
 #header-image {
-    width: 100px; /* Let the image be as wide as it needs to be */
+    width: 300px; /* Let the image be as wide as it needs to be */
     max-width: 250px; /* Maximum width for larger screens, adjust as needed */
     height: auto; /* Maintain aspect ratio */
     background-color: white; /* White background for the image */
