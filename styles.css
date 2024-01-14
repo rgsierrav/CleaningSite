@@ -339,7 +339,7 @@ padding: 1rem 0;
         width: 80%; /* Resize the image to 80% of its container for a smaller appearance */
         max-width: 400px; /* Maximum width can be set to a fixed value */
         height: auto; /* Maintain aspect ratio */
-        background-color: #8FBC8F; /* White background */
+        background-color: #f4f4f4; /* White background */
         border-radius: 10px; /* Rounded corners for the white background */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: a shadow for some depth */
         margin: 20px auto; /* Add some margin to the top and bottom, and auto center horizontally */
