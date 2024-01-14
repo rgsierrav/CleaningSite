@@ -346,59 +346,55 @@ padding: 1rem 0;
     }
 
     .header-top {
-        width: 100%; /* Ensure the container spans the full width */
-        margin: auto; /* Center the container */
+        padding: 10px 0; /* Adds padding at the top and bottom around the header image */
     }
 
     #header-image {
-        width: 30%; /* Resize the image */
-        max-width: 400px; /* Maximum width can be set to a fixed value */
+        width: 80%; /* Adjust the width to control the size of the image on mobile */
+        max-width: 300px; /* Maximum width to ensure the image is not too big */
         height: auto; /* Maintain aspect ratio */
         background-color: white; /* White background for the image */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-        margin: 0 auto; /* Center horizontally and remove any default margin */
-        display: block; /* Ensure it's a block element */
-        margin-top: 10px;
-        padding: 10px; /* Increase this value to make the white box bigger */
+        border-radius: 10px; /* Rounded corners for the white background */
+        margin: 10px auto; /* Add margin at the top and bottom, auto for horizontal centering */
+        display: block; /* Block display for proper margins */
+        padding: 10px; /* Adjust the padding to control the size of the white box */
+        box-sizing: border-box; /* Ensures padding is included in the width */
     }
 
-    /* Navigation menu styling */
+    /* Navigation menu styling for mobile */
     nav {
-        width: 100%;
-        margin-top: 0; /* Remove margin-top if not needed */
+        width: 100%; /* Full width for the navigation */
+        margin-top: 10px; /* Space between the image and navigation */
     }
 
     nav ul {
-        padding: 0;
-        margin: 20px 0; /* Add margin-top to push nav down from the image */
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 0px;
+        padding: 0; /* Remove default padding */
+        margin: 10px 0; /* Space between the image and the navigation items */
+        list-style: none; /* No bullets for the list */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center; /* Center-align the nav items */
     }
 
-    /* Navigation links styling */
     nav ul li {
-        margin: 15px 0; /* Adjust the space between buttons as needed */
+        margin: 10px 0; /* Margin between each nav item */
     }
 
     nav ul li a {
-        background: white; /* White background for buttons */
-        color: #333; /* Dark color for text */
-        padding: 0.8rem 2rem; /* Top/Bottom and Left/Right padding */
-        border-radius: 25px; /* Rounded corners for buttons */
-        font-size: 1rem; /* Sets font size */
-        font-weight: bold; /* Makes the text bold */
+        background: white; /* White background for the nav buttons */
+        color: #333; /* Dark color for the text */
+        padding: 0.8rem 2rem; /* Padding inside the nav buttons */
+        border-radius: 25px; /* Rounded corners for the buttons */
+        font-size: 1rem; /* Font size for the text */
+        font-weight: bold; /* Bold font weight for the text */
         letter-spacing: 0.05rem; /* Space between letters for a clean look */
-        transition: background-color 0.3s ease; /* Transition for hover effect */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effects */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        display: block; /* Ensure the entire area is clickable */
     }
 
-    /* Hover effect for navigation links */
     nav ul li a:hover {
-        background-color: #a7d7a9; /* Lighter green on hover for interactivity */
-        color: #333; /* Maintains dark text color */
+        background-color: #a7d7a9; /* Lighter green on hover for interactive feel */
+        color: #333; /* Maintain dark text color */
     }
 }
