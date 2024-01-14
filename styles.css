@@ -319,49 +319,53 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        padding-top: 80px; /* Increased padding to push content below the logo */
+        padding-top: 120px; /* Increase padding to ensure space for the logo and title */
     }
 
     .header-top {
-        position: relative; /* Relative position for absolute child positioning */
-        height: 60px; /* Set a fixed height to contain the logo */
+        position: relative; /* Maintain relative positioning */
+        /* Remove the fixed height to allow content to determine the height */
     }
 
     #header-logo {
-        position: absolute; /* Absolute positioning to place the logo */
-        top: 10px; /* Adjust the top position to lower the logo */
+        position: absolute; /* Maintain absolute positioning */
+        top: 20px; /* Position the logo slightly lower from the top */
         left: 50%; /* Center the logo horizontally */
-        transform: translateX(-50%); /* Adjust horizontally */
-        height: 60px; /* Set the logo height */
+        transform: translateX(-50%); /* Center align the logo */
+        height: 60px; /* Adjust the logo size as needed */
         width: auto; /* Maintain aspect ratio */
-        padding-top: 0; /* Remove if not needed */
+        z-index: 10; /* Ensure the logo is above the other elements */
     }
 
     h1 {
-        position: absolute; /* Absolute positioning to place the title */
-        top: 10px; /* Adjust the top position to below the logo */
-        left: 50%; /* Center the title horizontally */
-        transform: translateX(-50%); /* Adjust horizontally */
-        width: 100%; /* Full width to center the text */
-        font-size: 1.4rem; /* Adjust the font size for mobile */
-        padding: 0 20px; /* Add horizontal padding */
+        position: relative; /* Change to relative positioning */
+        top: 20px; /* Move the title below the logo */
+        left: 0; /* Align to the left edge */
+        transform: none; /* Remove the transform property */
+        width: 100%; /* Full width */
+        font-size: 1.6rem; /* Adjust the font size for mobile */
+        padding: 0; /* Adjust padding as necessary */
+        text-align: center; /* Center the title text */
+        z-index: 9; /* Below the logo */
+        margin-top: 70px; /* Adjust this value to move the title down below the logo */
     }
 
     nav {
-        padding-top: 20px; /* Add space between the title and the nav */
+        padding-top: 10px; /* Adjust the space between the title and the nav */
     }
 
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
         align-items: center; /* Center align nav items */
+        padding: 0; /* Reset padding */
     }
 
     nav ul li {
-        padding: 5px 0; /* Space around nav items */
+        padding: 10px 0; /* Space around nav items */
     }
 
     nav ul li a {
-        padding: 5px; /* Increase tap area */
+        padding: 10px; /* Increase tap area */
         display: block; /* Make the entire area clickable */
     }
 }
