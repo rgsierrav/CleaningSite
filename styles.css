@@ -348,6 +348,7 @@ padding: 1rem 0;
         color: white; /* White color for the title */
         margin: 0.5rem 0 1rem; /* Add more space below the title */
     }
+
     /* Navigation menu styling */
     nav {
         width: 100%; /* Full width to center align the navigation */
@@ -364,8 +365,7 @@ padding: 1rem 0;
 
     /* Navigation links styling */
     nav ul li {
-        width: auto; /* Allows the width to fit content */
-        margin: 0.5rem 0; /* Margin between items */
+        margin: 0.5rem 0; /* More space between the buttons */
     }
 
     nav ul li a {
