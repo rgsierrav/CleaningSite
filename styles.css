@@ -1,3 +1,23 @@
+header {
+    position: relative; /* Establishes a positioning context for absolute positioning */
+    padding-left: 60px; /* Adds space for the logo */
+}
+
+#header-logo {
+    position: absolute; /* Position the logo absolutely within the header */
+    left: 0; /* Aligns the logo to the left */
+    top: 50%; /* Aligns the logo vertically */
+    transform: translateY(-50%); /* Centers the logo vertically */
+    height: 40px; /* Reduces the logo's size */
+    width: auto; /* Maintains the aspect ratio of the logo */
+}
+
+h1 {
+    display: inline-block; /* Aligns the heading text inline with the logo */
+    margin-left: 10px; /* Adds some space between the logo and the text */
+    vertical-align: middle; /* Aligns the text vertically with the logo */
+}
+
 /* Services Section */
 #services {
     text-align: center; /* Center content inside the services section */
