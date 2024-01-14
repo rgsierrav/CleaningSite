@@ -319,51 +319,59 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        background: #8FBC8F; /* Consistent background color with the rest of the header */
-        padding: 10px 0; /* Reduced top and bottom padding */
-        text-align: center; /* Center-align the text for consistency */
+        background: #8FBC8F; /* Green background to match the theme */
+        color: white; /* White text for better contrast */
+        padding: 20px 0; /* Add padding to the top and bottom */
+        text-align: center; /* Center text for a balanced look */
+        position: relative; /* Needed for positioning the logo */
     }
 
     .header-top {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center the items */
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center justify items */
     }
 
     #header-logo {
-        position: relative; /* Relative positioning */
-        width: 70px; /* Fixed width for the logo */
-        height: 70px; /* Set height equal to width to maintain aspect ratio */
-        margin: 0 auto; /* Center the logo horizontally */
-        padding-top: 10px; /* Padding to push down from the top edge */
-        /* Remove transform since it's no longer absolutely positioned */
+        width: 70px; /* Set a fixed width for the logo */
+        height: 70px; /* Set a fixed height for the logo */
+        margin-bottom: 20px; /* Space between the logo and the title */
+        /* Logo will inherit the center alignment from .header-top */
     }
 
     h1 {
-        font-size: 1.8rem; /* Slightly larger font size for readability */
-        color: white; /* White color for contrast */
-        margin: 8px 0; /* Add some margin above and below the title */
-        padding: 0 15px; /* Padding on the sides to keep the text from touching the edges */
+        font-size: 2rem; /* Make the title larger for impact */
+        margin: 0 0 20px; /* Space below the title */
+        padding: 0 10px; /* Padding on the sides */
+        /* No need for absolute positioning; it will flow naturally in the document */
     }
 
     nav {
-        margin-top: 10px; /* Add some space between the title and the nav */
+        margin-bottom: 20px; /* Space below the navigation */
     }
 
     nav ul {
-        flex-direction: column; /* Stack the navigation items vertically */
-        align-items: center; /* Center-align the navigation items */
-        width: 100%; /* Full width for the navigation */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        list-style: none; /* No bullet points */
+        flex-direction: column; /* Stack the links vertically */
     }
 
     nav ul li {
-        width: 100%; /* Each navigation item takes full width */
-        margin: 5px 0; /* Add some margin top and bottom for each item */
+        margin: 10px 0; /* Margin between navigation items */
     }
 
     nav ul li a {
-        display: block; /* Block display to make the entire area clickable */
-        padding: 10px; /* Padding to increase the tap area */
-        color: white; /* White color for the links for contrast */
-        font-weight: bold; /* Bold font weight for readability */
+        font-size: 1.2rem; /* Increase font size for readability */
+        padding: 8px 20px; /* Padding for larger tap area */
+        border-radius: 5px; /* Rounded corners for aesthetic */
+        background: #ffffff; /* White background for the buttons */
+        color: #333; /* Dark text for contrast */
+        margin: 5px 0; /* Margin for spacing */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    nav ul li a:hover {
+        background-color: #a7d7a9; /* Light green background on hover for interactivity */
     }
 }
