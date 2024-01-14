@@ -13,7 +13,7 @@ header {
 }
 
 #header-logo {
-    width: 70px; /* Set a fixed width for the logo */
+    width: 50px; /* Set a fixed width for the logo */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Absolute positioning relative to the header */
     left: 20px; /* Position logo from the left */
