@@ -46,17 +46,17 @@ nav ul li {
 }
 
 nav ul li a {
-    background: white;
-    color: #333; /* Ensure this is a contrasting color */
-    padding: 10px 20px; /* Adjust padding to ensure it's enough space */
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add a border for debugging */
-    border: 1px solid red;
+    background: white; /* Ensures background is white */
+    color: #333; /* Dark color for text to ensure visibility */
+    padding: 0.8rem 2rem; /* Sufficient padding for clickable area */
+    border-radius: 25px; /* Rounded corners for buttons */
+    font-size: 1rem; /* Ensures text is not too small */
+    font-weight: bold; /* Bold text for readability */
+    letter-spacing: 0.05rem; /* Slight spacing between letters */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: inline-block; /* Ensures the link is treated as a block-level element */
+    overflow: visible; /* Ensures text is not cut off */
+    z-index: 1; /* Ensures the link is above other content */
 }
 
 nav ul li a:hover {
