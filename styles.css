@@ -365,7 +365,7 @@ padding: 1rem 0;
 
     /* Navigation links styling */
     nav ul li {
-        margin: 50px; /* More space between the buttons */
+        margin: 30px; /* More space between the buttons */
     }
 
     nav ul li a {
