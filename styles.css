@@ -329,35 +329,26 @@ padding: 1rem 0;
 }
 
 @media screen and (max-width: 768px) {
-    /* Header container styling */
     header {
-        background: #8FBC8F; /* Keep the background color consistent */
-        padding: 1rem 0; /* Adjust top and bottom padding as needed */
-        text-align: center; /* Center-align elements */
+        /* Adjust the padding to fit the new image size if needed */
+        padding: 0; /* You might not need padding if the image contains it */
+        background: #8FBC8F; /* Optional: only needed if there's extra space around the image */
+        text-align: center;
     }
 
     /* Top part of the header with logo and title */
     .header-top {
-        display: flex; /* Uses flexbox for layout */
-        flex-direction: column; /* Stacks items vertically */
-        align-items: center; /* Centers items horizontally */
-        padding-bottom: 1rem; /* Space between header-top and navigation */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* No longer need padding-bottom if the image includes space */
     }
 
-    /* Logo styling */
-    #header-logo {
-        width: 90px; /* Sets width for the logo */
-        height: 90px; /* Sets height for the logo - should match width for a circle */
-        margin-bottom: 1rem; /* Space between the logo and the title */
-    }
-
-    /* Title styling */
-    h1 {
-        font-size: 2rem; /* Choose a font size that fits the design */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
-        font-weight: 600; /* Slightly bolder weight for the font */
-        color: white; /* White color for the title */
-        margin: 0.5rem 0 1rem; /* Add more space below the title */
+    #header-image {
+        width: 100%; /* Full width to scale with the header */
+        height: auto; /* Maintain aspect ratio */
+        /* Margin is not necessary unless you want to push the navigation down */
     }
 
     /* Navigation menu styling */
@@ -366,17 +357,17 @@ padding: 1rem 0;
     }
 
     nav ul {
-        padding: 0; /* Resets padding */
-        margin: 0; /* Resets margin */
-        list-style: none; /* Removes list styles */
-        display: flex; /* Uses flexbox for layout */
-        flex-direction: column; /* Stacks navigation items vertically */
-        align-items: center; /* Centers navigation items */
+        padding: 0;
+        margin: 20px 0; /* Add margin-top to push nav down from the image */
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Navigation links styling */
     nav ul li {
-        margin: 20px; /* More space between the buttons */
+        margin: 15px 0; /* Adjust the space between buttons as needed */
     }
 
     nav ul li a {
