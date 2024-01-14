@@ -20,6 +20,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
     margin: 0 auto; /* Center the image */
     display: block; /* Block display */
+    padding: 10px; /* Increase this value to make the white box bigger */
 }
 
 nav {
