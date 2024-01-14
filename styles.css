@@ -145,17 +145,17 @@ h2 {
 /* Star Rating in Review Form */
 .rating {
     unicode-bidi: bidi-override;
-    direction: rtl; /* Right-to-left to allow for reverse highlighting */
+    direction: rtl;
     text-align: center;
-    font-size: 2em; /* Adjust size as needed */
+    font-size: 2em;
+    line-height: 1; /* Normalizes the line height to remove extra vertical space */
     display: inline-block;
-    margin: 0; /* Removes bottom margin */
+    margin: 0 auto; /* Center the rating within its container */
 }
 
 .rating > label {
     display: inline-block;
-    position: relative;
-    margin: 0 5px; /* Reduces space between stars */
+    margin: 0 2px; /* Reduces space between stars */
     cursor: pointer;
 }
 
@@ -165,9 +165,6 @@ h2 {
 
 .rating > label:before {
     content: "\2605"; /* Unicode black star */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the star within the label */
     color: #C5C5C5; /* Default star color - grayed out */
 }
 
