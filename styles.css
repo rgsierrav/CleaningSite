@@ -1,43 +1,46 @@
 header {
     background-color: #f4f4f4; /* Light grey background, or any color you prefer */
     padding: 10px 20px; /* Provides padding within the header */
-    display: flex; /* Aligns children (logo, title, and nav) in a row */
+}
+
+.header-top {
+    display: flex; /* Aligns children (logo and title) in a row */
     align-items: center; /* Centers children vertically */
-    justify-content: space-between; /* Distributes extra space evenly */
+    justify-content: center; /* Centers horizontally */
+    padding-bottom: 10px; /* Adds some space above the navigation */
 }
 
 #header-logo {
     height: 50px; /* Adjust the logo size as needed */
-    /* Remove margin-right if logo should stick to the edge */
-}
-
-/* Container for the title and navigation */
-.header-content {
-    display: flex; /* Makes it a flex container */
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center; /* Centers items horizontally */
-    flex-grow: 1; /* Allows the container to grow and use up available space */
+    position: absolute; /* Absolute positioning relative to header */
+    left: 20px; /* Adjust based on your padding */
+    top: 50%; /* Centers vertically */
+    transform: translateY(-50%); /* Offset by half its height for perfect centering */
 }
 
 h1 {
     margin: 0; /* Removes default margin from h1 */
-    line-height: 1; /* Adjust line height to control vertical spacing */
-    /* Other h1 styles if needed */
 }
 
-/* Navigation styles */
+nav {
+    text-align: center; /* Centers the navigation */
+}
+
 nav ul {
     list-style: none; /* Removes default list styling */
     padding: 0; /* Removes default padding */
-    margin: 0; /* Aligns menu with the title */
-    display: flex; /* Aligns menu items in a row */
-    gap: 20px; /* Adds space between menu items */
+    margin: 0; /* Removes default margin */
+    display: inline-block; /* Allows the list to be centered */
+}
+
+nav ul li {
+    display: inline; /* Displays the list items inline */
+    margin-right: 20px; /* Adjust the space between the menu items */
 }
 
 nav ul li a {
     text-decoration: none; /* Removes underline from links */
     color: #333; /* Dark text color for links */
-    /* Other link styles if needed */
 }
 
 /* Services Section */
