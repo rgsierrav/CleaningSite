@@ -249,6 +249,15 @@ form input[type="number"] {
     font-size: 1em; /* Adjust font size as needed */
 }
 
+#contact a {
+    color: #8FBC8F; /* Use your brand's primary green for links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Adds underline on hover for better accessibility */
+}
+
 /* Footer */
 footer {
 background: #2F4F4F;
