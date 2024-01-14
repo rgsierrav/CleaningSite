@@ -240,7 +240,7 @@ form input[type="number"] {
     -moz-appearance: textfield;    /* For Mozilla browsers */
 
     margin: 0;
-    border: 2px solid #8FBC8F; /* Adds a border */
+    border: 2px solid #CCC; /* Adds a border */
     padding: 5px; /* Adds padding inside the input */
     font-size: 1em; /* Adjust font size as needed */
 }
