@@ -12,7 +12,7 @@ header {
 }
 
 #header-image {
-    width: 60%; /* Adjust width as necessary for desktop */
+    width: 50%; /* Adjust width as necessary for desktop */
     max-width: 600px; /* Adjust max-width as necessary */
     height: auto; /* Maintain aspect ratio */
     background-color: white; /* White background for the image */
