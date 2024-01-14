@@ -218,18 +218,26 @@ form input[type="submit"]:hover {
 background-color: #8FBC8F;
 }
 
-/* Style for Yes/No Radio Buttons */
-form .yes-no-options {
-    display: flex;
-    align-items: center;
-}
-
+/* Hide the actual radio buttons */
 form .yes-no-options input[type="radio"] {
-    margin-right: 5px;
+    display: none;
 }
 
+/* Style the labels to look like toggle buttons */
 form .yes-no-options label {
-    margin-right: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #8FBC8F;
+    border-radius: 20px; /* Circular borders for the 'button' look */
+    background-color: #f4f4f4;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Change the appearance of the label when the radio button is checked */
+form .yes-no-options input[type="radio"]:checked + label {
+    background-color: #8FBC8F;
+    color: white;
 }
 
 /* Styling for Number Inputs */
