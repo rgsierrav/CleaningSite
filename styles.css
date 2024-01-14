@@ -40,8 +40,15 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #333; /* Dark text color for links */
+    background: white; /* White background for buttons */
+    color: #333; /* Dark color for text */
+    padding: 0.8rem 2rem; /* Top/Bottom and Left/Right padding */
+    border-radius: 25px; /* Rounded corners for buttons */
+    font-size: 1rem; /* Sets font size */
+    font-weight: bold; /* Makes the text bold */
+    letter-spacing: 0.05rem; /* Space between letters for a clean look */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Services Section */
