@@ -51,6 +51,12 @@ nav ul li a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #a7d7a9; /* Lighter green on hover for interactivity */
+    color: #333; /* Maintains dark text color */
+}
+
 /* Services Section */
 #services {
     text-align: center; /* Center content inside the services section */
