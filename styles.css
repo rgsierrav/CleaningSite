@@ -6,7 +6,7 @@ header {
 .header-top {
     display: flex; /* Aligns children (logo and title) in a row */
     align-items: center; /* Centers children vertically */
-    justify-content: center; /* Centers horizontally */
+    justify-content: flex-start; /* Aligns children to the start of the flex container */
     padding-bottom: 10px; /* Adds some space above the navigation */
 }
 
@@ -16,31 +16,12 @@ header {
     left: 20px; /* Adjust based on your padding */
     top: 50%; /* Centers vertically */
     transform: translateY(-50%); /* Offset by half its height for perfect centering */
+    background-color: #ffffff; /* White background for the logo */
 }
 
 h1 {
     margin: 0; /* Removes default margin from h1 */
-}
-
-nav {
-    text-align: center; /* Centers the navigation */
-}
-
-nav ul {
-    list-style: none; /* Removes default list styling */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: inline-block; /* Allows the list to be centered */
-}
-
-nav ul li {
-    display: inline; /* Displays the list items inline */
-    margin-right: 20px; /* Adjust the space between the menu items */
-}
-
-nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #333; /* Dark text color for links */
+    padding-left: 70px; /* Adds padding to make space for the logo */
 }
 
 /* Services Section */
