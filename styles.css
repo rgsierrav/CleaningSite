@@ -1,19 +1,43 @@
 header {
-    background-color: #f4f4f4; /* Sets a light grey background for the header */
-    padding-left: 20px; /* Adds padding on the left side of the header */
-    /* Rest of your header styling */
+    background-color: #f4f4f4; /* Light grey background, or any color you prefer */
+    padding: 10px 20px; /* Provides padding within the header */
+    display: flex; /* Aligns children (logo, title, and nav) in a row */
+    align-items: center; /* Centers children vertically */
+    justify-content: space-between; /* Distributes extra space evenly */
 }
 
 #header-logo {
-    height: 40px; /* Adjust the size as needed */
-    margin-right: 20px;
-    /* Removed absolute positioning and vertical centering to use inline styling */
+    height: 50px; /* Adjust the logo size as needed */
+    /* Remove margin-right if logo should stick to the edge */
+}
+
+/* Container for the title and navigation */
+.header-content {
+    display: flex; /* Makes it a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    flex-grow: 1; /* Allows the container to grow and use up available space */
 }
 
 h1 {
-    display: inline; /* Ensures the logo and text are on the same line */
-    vertical-align: middle; /* Centers the text with the logo */
-    /* Rest of your h1 styling */
+    margin: 0; /* Removes default margin from h1 */
+    line-height: 1; /* Adjust line height to control vertical spacing */
+    /* Other h1 styles if needed */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Aligns menu with the title */
+    display: flex; /* Aligns menu items in a row */
+    gap: 20px; /* Adds space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color for links */
+    /* Other link styles if needed */
 }
 
 /* Services Section */
