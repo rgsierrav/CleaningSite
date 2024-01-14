@@ -320,7 +320,7 @@ padding: 1rem 0;
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
     .header-top {
-        flex-direction: row; /* Keep logo and title/nav on the same row */
+        /* flex-direction: row; Keep logo and title/nav on the same row */
         justify-content: flex-start; /* Align items to the start */
     }
 
