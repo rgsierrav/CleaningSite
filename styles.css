@@ -93,6 +93,39 @@ h2 {
     color: #2F4F4F;
 }
 
+/* Services Section */
+#services {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.service-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-item p {
+    margin-top: 10px;
+}
+
 /* Reviews Section */
 .review {
     background-color: #A9C9A4;
@@ -112,7 +145,7 @@ h2 {
 /* Star Rating in Review Form */
 .rating {
     unicode-bidi: bidi-override;
-    direction: rtl; /* Left-to-right for side-by-side star layout */
+    direction: rtl;
     text-align: center;
     font-size: 2em;
     display: inline-block;
@@ -121,11 +154,11 @@ h2 {
 }
 
 .rating > label {
-    display: inline-block; 
+    display: inline-block;
     position: relative;
-    color: #C5C5C5; /* Default star color - grayed out */
+    color: #C5C5C5;
     cursor: pointer;
-    margin-right: 20px; /* Adds spacing between the stars */
+    margin-right: 20px;
 }
 
 .rating > input {
@@ -133,16 +166,16 @@ h2 {
 }
 
 .rating > label:before {
-    content: "\2605"; /* Unicode black star */
+    content: "\2605";
     position: absolute;
     left: 0;
-    color: #C5C5C5; /* Default star color - grayed out */
+    color: #C5C5C5;
 }
 
 .rating > label:hover:before,
 .rating > label:hover ~ label:before,
 .rating > input:checked ~ label:before {
-    color: #FFD700; /* Gold star color for selected stars */
+    color: #FFD700;
 }
 
 /* Form Styling */
@@ -164,53 +197,46 @@ form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
 }
 
 form input[type="submit"] {
-    display: block;
-    background-color: #7AA67D;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+display: block;
+background-color: #7AA67D;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #8FBC8F;
-}
-
-/* Footer */
-footer {
-    background: #2F4F4F;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Form Styling - Improvements */
-form input[type="number"], form input[type="radio"] {
-    -webkit-appearance: none; /* For WebKit browsers */
-    -moz-appearance: none;    /* For Mozilla browsers */
-    appearance: none;         /* Standard syntax */
+background-color: #8FBC8F;
 }
 
 /* Style for Yes/No Radio Buttons */
 form .yes-no-options {
-    display: flex;
-    justify-content: start;
-    gap: 10px;
+display: flex;
+justify-content: start;
+gap: 10px;
 }
 
 form .yes-no-options input[type="radio"] {
-    margin-right: 5px;
+margin-right: 5px;
 }
 
 form .yes-no-options label {
-    margin-right: 20px;
+margin-right: 20px;
+}
+
+/* Footer */
+footer {
+background: #2F4F4F;
+color: white;
+text-align: center;
+padding: 1rem 0;
 }
