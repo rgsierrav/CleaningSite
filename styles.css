@@ -359,7 +359,7 @@ padding: 1rem 0;
         margin: 0; /* Resets margin */
         list-style: none; /* Removes list styles */
         display: flex; /* Uses flexbox for layout */
-        flex-direction: column; /* Stacks navigation items vertically */
+        flex-direction: row; /* Stacks navigation items vertically */
         align-items: center; /* Centers navigation items */
     }
 
