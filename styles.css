@@ -319,42 +319,44 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        position: relative;
-        padding-top: 70px; /* Increase top padding to accommodate the logo */
-        padding-bottom: 20px; /* Consistent padding at the bottom */
+        padding-top: 80px; /* Increased padding to push content below the logo */
     }
 
     .header-top {
-        flex-direction: column; /* Stack elements vertically on mobile */
-        align-items: center; /* Center align items */
+        position: relative; /* Relative position for absolute child positioning */
+        height: 60px; /* Set a fixed height to contain the logo */
     }
 
     #header-logo {
-        position: absolute; /* Absolute positioning */
-        top: 20px; /* Position from the top */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, 0); /* Center align the logo */
-        height: 50px; /* Adjust the logo size as needed */
+        position: absolute; /* Absolute positioning to place the logo */
+        top: 10px; /* Adjust the top position to lower the logo */
+        left: 50%; /* Center the logo horizontally */
+        transform: translateX(-50%); /* Adjust horizontally */
+        height: 60px; /* Set the logo height */
         width: auto; /* Maintain aspect ratio */
         padding-top: 0; /* Remove if not needed */
     }
 
     h1 {
-        font-size: 1.4rem; /* Adjust the font size as needed */
-        padding: 0 15px; /* Add horizontal padding */
-        margin-top: 0; /* Adjust the top margin as needed */
-        text-align: center; /* Center the text */
-        width: 100%; /* Full width */
+        position: absolute; /* Absolute positioning to place the title */
+        top: 80px; /* Adjust the top position to below the logo */
+        left: 50%; /* Center the title horizontally */
+        transform: translateX(-50%); /* Adjust horizontally */
+        width: 100%; /* Full width to center the text */
+        font-size: 1.4rem; /* Adjust the font size for mobile */
+        padding: 0 20px; /* Add horizontal padding */
+    }
+
+    nav {
+        padding-top: 20px; /* Add space between the title and the nav */
     }
 
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
-        width: 100%; /* Full width for nav */
-        padding: 0;
+        align-items: center; /* Center align nav items */
     }
 
     nav ul li {
-        text-align: center; /* Center align nav items */
         padding: 5px 0; /* Space around nav items */
     }
 
@@ -362,6 +364,4 @@ padding: 1rem 0;
         padding: 5px; /* Increase tap area */
         display: block; /* Make the entire area clickable */
     }
-
-    /* Continue with other responsive adjustments as necessary */
 }
