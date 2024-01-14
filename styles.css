@@ -320,33 +320,34 @@ padding: 1rem 0;
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
     .header-top {
-        flex-direction: row; /* Keep logo and title/nav on the same row */
-        justify-content: flex-start; /* Align items to the start */
+        flex-direction: column; /* Keep stacked layout for mobile */
     }
 
     #header-logo {
-        order: -1; /* Ensure logo appears first */
-        height: 50px; /* Smaller logo for mobile */
-        margin-right: 10px; /* Adjusted spacing for mobile */
+        order: -1; /* Logo comes first */
+        height: 50px; /* Adjust logo size for mobile */
+        width: auto; /* Maintain aspect ratio */
     }
 
     h1 {
-        flex-grow: 1; /* Allows title to fill the space */
-        text-align: left; /* Aligns the title text to the left */
-        padding-left: 60px; /* Ensure padding to not overlap the logo */
+        font-size: 1.2rem; /* Smaller font size for mobile */
+        padding: 0 15px; /* Adjust padding for mobile */
+        text-align: center; /* Center title */
+        width: calc(100% - 30px); /* Subtract padding from the width */
+        line-height: 1.2; /* Adjust line height as needed */
     }
 
     nav ul {
-        justify-content: flex-end; /* Align nav to the end */
+        width: 100%;
+        padding: 0;
     }
 
     nav ul li {
-        width: 100%; /* Full width nav items */
-        text-align: center; /* Center text in nav items */
+        text-align: center;
+        padding: 5px 0; /* Add padding to increase tap area */
     }
 
     nav ul li a {
-        padding: 10px; /* Larger clickable area for links */
-        display: block; /* Make the entire list item a clickable area */
+        padding: 5px; /* Add padding to increase tap area */
     }
 }
