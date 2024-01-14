@@ -1,21 +1,19 @@
 header {
-    position: relative; /* Establishes a positioning context for absolute positioning */
-    padding-left: 60px; /* Adds space for the logo */
+    background-color: #f4f4f4; /* Sets a light grey background for the header */
+    padding-left: 20px; /* Adds padding on the left side of the header */
+    /* Rest of your header styling */
 }
 
 #header-logo {
-    position: absolute; /* Position the logo absolutely within the header */
-    left: 5; /* Aligns the logo to the left */
-    top: 50%; /* Aligns the logo vertically */
-    transform: translateY(-50%); /* Centers the logo vertically */
-    height: 40px; /* Reduces the logo's size */
-    width: auto; /* Maintains the aspect ratio of the logo */
+    height: 40px; /* Adjust the size as needed */
+    margin-right: 20px;
+    /* Removed absolute positioning and vertical centering to use inline styling */
 }
 
 h1 {
-    display: inline-block; /* Aligns the heading text inline with the logo */
-    margin-left: 10px; /* Adds some space between the logo and the text */
-    vertical-align: middle; /* Aligns the text vertically with the logo */
+    display: inline; /* Ensures the logo and text are on the same line */
+    vertical-align: middle; /* Centers the text with the logo */
+    /* Rest of your h1 styling */
 }
 
 /* Services Section */
