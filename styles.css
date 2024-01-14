@@ -343,6 +343,7 @@ padding: 1rem 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
         margin: 0 auto; /* Center horizontally and remove any default margin */
         display: block; /* Ensure it's a block element */
+        margin-top: 10px;
     }
 
     /* Navigation menu styling */
