@@ -192,3 +192,21 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
+/* Form Styling - Improvements */
+form input[type="number"], form input[type="radio"] {
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none;    /* For Mozilla browsers */
+    appearance: none;         /* Standard syntax */
+}
+
+/* Style for Yes/No Radio Buttons */
+form .yes-no-options {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+form .yes-no-options label {
+    margin-right: 20px;
+}
