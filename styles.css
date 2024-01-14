@@ -335,7 +335,7 @@ padding: 1rem 0;
     }
 
     #header-image {
-        width: 50%; /* Resize the image to 80% of its container */
+        width: 50%; /* Resize the image */
         max-width: 400px; /* Maximum width can be set to a fixed value */
         height: auto; /* Maintain aspect ratio */
         background-color: white; /* White background for the image */
@@ -344,7 +344,7 @@ padding: 1rem 0;
         margin: 0 auto; /* Center horizontally and remove any default margin */
         display: block; /* Ensure it's a block element */
         margin-top: 10px;
-        padding: 20px; /* Increase this value to make the white box bigger */
+        padding: 50px; /* Increase this value to make the white box bigger */
     }
 
     /* Navigation menu styling */
