@@ -319,33 +319,31 @@ padding: 1rem 0;
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
+    header {
+        padding-top: 20px; /* Increased top padding */
+        padding-bottom: 20px; /* Increased bottom padding */
+    }
+
     .header-top {
-        justify-content: flex-start; /* Aligns logo to the left */
+        flex-direction: column; /* Stack logo and title */
+        align-items: center; /* Center alignment */
     }
 
     #header-logo {
-        left: 10px; /* Keeps logo close to the edge */
-        top: 5px; /* Adjusts top position */
-        height: 40px; /* Smaller logo for mobile */
+        margin-bottom: 10px; /* Space between logo and title */
     }
 
     h1 {
-        font-size: 1.2rem; /* Smaller font size for the title */
-        text-align: left; /* Aligns the title text to the left */
-        padding: 0 50px 0 60px; /* Adds padding to the left side of the title */
+        font-size: 1.5rem; /* Increased font size for better readability */
+        padding: 0 20px; /* Padding to prevent text touching the sides */
     }
 
     nav ul {
-        flex-direction: column; /* Stacks nav items vertically */
-        align-items: flex-start; /* Aligns nav items to the left */
-        margin-top: 60px; /* Adds space at the top to avoid overlap with the title */
+        flex-direction: column; /* Stack nav items */
+        align-items: center; /* Center alignment */
     }
 
     nav ul li {
-        margin: 5px 0; /* Space between stacked nav items */
-    }
-
-    nav ul li a {
-        padding: 5px; /* Larger click area for links */
+        margin: 10px 0; /* Increased space for touch targets */
     }
 }
