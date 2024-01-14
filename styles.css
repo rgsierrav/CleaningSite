@@ -14,6 +14,9 @@ header {
     height: 50px; /* Adjust the logo size as needed */
     background-color: #ffffff; /* White background for the logo */
     padding-right: 20px; /* Adds some space between the logo and the title */
+    border: 3px solid #ccc; /* Adds a border around the logo, adjust color and width as desired */
+    margin-right: 20px; /* Adjust space between the logo and the title */
+    box-sizing: border-box; /* Includes padding and border in the width and height */
 }
 
 h1 {
