@@ -318,60 +318,71 @@ padding: 1rem 0;
 }
 
 @media screen and (max-width: 768px) {
+    /* Header container styling */
     header {
-        background: #8FBC8F; /* Green background to match the theme */
-        color: white; /* White text for better contrast */
-        padding: 20px 0; /* Add padding to the top and bottom */
-        text-align: center; /* Center text for a balanced look */
-        position: relative; /* Needed for positioning the logo */
+        background: #8FBC8F; /* Continues the green background */
+        padding: 1.5rem 0; /* Top and bottom padding */
+        text-align: center; /* Ensures text is centered */
     }
 
+    /* Top part of the header with logo and title */
     .header-top {
-        flex-direction: column; /* Stack logo and navigation vertically */
-        align-items: center; /* Center align items */
-        justify-content: center; /* Center justify items */
+        display: flex; /* Uses flexbox for layout */
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items horizontally */
+        padding-bottom: 1rem; /* Space between header-top and navigation */
     }
 
+    /* Logo styling */
     #header-logo {
-        width: 70px; /* Set a fixed width for the logo */
-        height: 70px; /* Set a fixed height for the logo */
-        margin-bottom: 20px; /* Space between the logo and the title */
-        /* Logo will inherit the center alignment from .header-top */
+        width: 90px; /* Sets width for the logo */
+        height: 90px; /* Sets height for the logo - should match width for a circle */
+        margin-bottom: 1rem; /* Space between the logo and the title */
     }
 
+    /* Title styling */
     h1 {
-        font-size: 2rem; /* Make the title larger for impact */
-        margin: 0 0 20px; /* Space below the title */
-        padding: 0 10px; /* Padding on the sides */
-        /* No need for absolute positioning; it will flow naturally in the document */
+        font-size: 2.2rem; /* Increases font size for title */
+        font-weight: 300; /* Lighter font-weight for a modern look */
+        margin: 0; /* Resets margin */
+        color: white; /* Sets title color to white for contrast */
     }
 
+    /* Navigation menu styling */
     nav {
-        margin-bottom: 20px; /* Space below the navigation */
+        width: 100%; /* Full width to center align the navigation */
     }
 
     nav ul {
-        padding: 0; /* Remove padding */
-        margin: 0; /* Remove margin */
-        list-style: none; /* No bullet points */
-        flex-direction: column; /* Stack the links vertically */
+        padding: 0; /* Resets padding */
+        margin: 0; /* Resets margin */
+        list-style: none; /* Removes list styles */
+        display: flex; /* Uses flexbox for layout */
+        flex-direction: column; /* Stacks navigation items vertically */
+        align-items: center; /* Centers navigation items */
     }
 
+    /* Navigation links styling */
     nav ul li {
-        margin: 10px 0; /* Margin between navigation items */
+        width: auto; /* Allows the width to fit content */
+        margin: 0.5rem 0; /* Margin between items */
     }
 
     nav ul li a {
-        font-size: 1.2rem; /* Increase font size for readability */
-        padding: 8px 20px; /* Padding for larger tap area */
-        border-radius: 5px; /* Rounded corners for aesthetic */
-        background: #ffffff; /* White background for the buttons */
-        color: #333; /* Dark text for contrast */
-        margin: 5px 0; /* Margin for spacing */
-        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        background: white; /* White background for buttons */
+        color: #333; /* Dark color for text */
+        padding: 0.8rem 2rem; /* Top/Bottom and Left/Right padding */
+        border-radius: 25px; /* Rounded corners for buttons */
+        font-size: 1rem; /* Sets font size */
+        font-weight: bold; /* Makes the text bold */
+        letter-spacing: 0.05rem; /* Space between letters for a clean look */
+        transition: background-color 0.3s ease; /* Transition for hover effect */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     }
 
+    /* Hover effect for navigation links */
     nav ul li a:hover {
-        background-color: #a7d7a9; /* Light green background on hover for interactivity */
+        background-color: #a7d7a9; /* Lighter green on hover for interactivity */
+        color: #333; /* Maintains dark text color */
     }
 }
