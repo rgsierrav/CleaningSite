@@ -1,6 +1,5 @@
 header {
     background-color: #8FBC8F; /* Green background */
-    padding: 10px 20px; /* Provides padding within the header */
     position: relative; /* Needed for absolute positioning of the logo */
 }
 
