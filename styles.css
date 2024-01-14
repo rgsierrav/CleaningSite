@@ -119,6 +119,17 @@ header {
     padding: 1rem 0;
 }
 
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-image {
+    max-width: 100%; /* Ensures the image is responsive and fits the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
 nav ul {
     list-style: none;
 }
