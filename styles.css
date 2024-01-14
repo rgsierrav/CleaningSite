@@ -335,7 +335,7 @@ padding: 1rem 0;
     }
 
     #header-image {
-        width: 80%; /* Resize the image to 80% of its container */
+        width: 50%; /* Resize the image to 80% of its container */
         max-width: 400px; /* Maximum width can be set to a fixed value */
         height: auto; /* Maintain aspect ratio */
         background-color: white; /* White background for the image */
