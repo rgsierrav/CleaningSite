@@ -1,25 +1,25 @@
 header {
-    background-color: #8FBC8F; /* Light grey background, or any color you prefer */
+    background-color: #f4f4f4; /* Light grey background, or any color you prefer */
     padding: 10px 20px; /* Provides padding within the header */
     position: relative; /* Needed for absolute positioning of the logo */
 }
 
 .header-top {
-    display: flex; /* Aligns children (logo and title) in a row */
+    display: flex; /* Keeps children (logo and title) in a row */
     align-items: center; /* Centers children vertically */
     justify-content: center; /* Centers the title horizontally */
-    padding-bottom: 10px; /* Adds some space above the navigation */
-    position: relative; /* Needed for absolute positioning of the logo */
+    padding-bottom: 10px; /* Space above the navigation */
 }
 
-#header-logo {
-    width: 70px; /* Set a fixed width for the logo */
+#header-image {
+    width: 60%; /* Adjust the width to suit your desktop layout */
+    max-width: 600px; /* Set a max-width that looks good on larger screens */
     height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Absolute positioning relative to the header */
-    left: 70px; /* Position logo from the left */
-    top: 50%; /* Align vertically */
-    padding-top: 10px;
-    transform: translateY(-50%); /* Center logo vertically */
+    background-color: white; /* White background for the image */
+    border-radius: 15px; /* Rounded corners for the image background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    margin: 20px auto; /* Center the image with automatic margins */
+    display: block; /* Block display for proper centering */
 }
 
 nav {
