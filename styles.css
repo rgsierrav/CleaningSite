@@ -13,7 +13,7 @@ header {
 
 #header-image {
     width: 30%; /* Adjust width as necessary for desktop */
-    max-width: 600px; /* Adjust max-width as necessary */
+    max-width: 500px; /* Adjust max-width as necessary */
     height: auto; /* Maintain aspect ratio */
     background-color: white; /* White background for the image */
     border-radius: 15px; /* Rounded corners */
