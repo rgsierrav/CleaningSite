@@ -28,6 +28,8 @@ header {
 /* Desktop navigation styles */
 nav {
     text-align: center;
+    /* If using flexbox, ensure the container has a height */
+    height: auto;
 }
 
 nav ul {
@@ -36,22 +38,25 @@ nav ul {
     margin: 0;
     display: flex; /* Horizontal navigation for desktop */
     justify-content: center;
+    align-items: center; /* Add this to vertically align the flex items if needed */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 20px; /* Increase margin to see if it helps */
 }
 
 nav ul li a {
     background: white;
-    color: #333;
-    padding: 0.8rem 2rem;
+    color: #333; /* Ensure this is a contrasting color */
+    padding: 10px 20px; /* Adjust padding to ensure it's enough space */
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a border for debugging */
+    border: 1px solid red;
 }
 
 nav ul li a:hover {
