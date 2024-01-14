@@ -207,6 +207,10 @@ form .yes-no-options {
     gap: 10px;
 }
 
+form .yes-no-options input[type="radio"] {
+    margin-right: 5px;
+}
+
 form .yes-no-options label {
     margin-right: 20px;
 }
