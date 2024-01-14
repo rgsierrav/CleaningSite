@@ -5,7 +5,7 @@ header {
 
 #header-logo {
     position: absolute; /* Position the logo absolutely within the header */
-    left: 0; /* Aligns the logo to the left */
+    left: 5; /* Aligns the logo to the left */
     top: 50%; /* Aligns the logo vertically */
     transform: translateY(-50%); /* Centers the logo vertically */
     height: 40px; /* Reduces the logo's size */
