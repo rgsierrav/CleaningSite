@@ -1,60 +1,62 @@
+/* Global styles for the header */
 header {
     background-color: #8FBC8F; /* Green background */
-    padding: 0; /* Adjust padding as necessary */
     text-align: center;
+    position: relative;
 }
 
 .header-top {
-    display: flex; /* Keeps children (logo and title) in a row */
-    align-items: center; /* Centers children vertically */
-    justify-content: center; /* Centers the title horizontally */
-    padding-bottom: 10px; /* Space above the navigation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the image and nav vertically on all views */
 }
 
+/* Styles for the header image with a smaller white box */
 #header-image {
-    width: 20%; /* Adjust width as necessary for desktop */
-    max-width: 500px; /* Adjust max-width as necessary */
+    width: auto; /* Let the image be as wide as it needs to be */
+    max-width: 250px; /* Maximum width for larger screens, adjust as needed */
     height: auto; /* Maintain aspect ratio */
     background-color: white; /* White background for the image */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    margin: 0 auto; /* Center the image */
+    border-radius: 10px; /* Rounded corners for the white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    margin: 20px auto; /* Center the image */
     display: block; /* Block display */
-    padding: 10px; /* Increase this value to make the white box bigger */
+    padding: 5px; /* Smaller white box */
 }
 
+/* Desktop navigation styles */
 nav {
-    text-align: center; /* Centers the navigation */
+    text-align: center;
 }
 
 nav ul {
-    list-style: none; /* Removes default list styling */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Aligns the list horizontally */
-    justify-content: center; /* Centers the list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal navigation for desktop */
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 10px; /* Adjust the space between the menu items */
+    margin: 0 10px;
 }
 
 nav ul li a {
-    background: white; /* White background for buttons */
-    color: #333; /* Dark color for text */
-    padding: 0.8rem 2rem; /* Top/Bottom and Left/Right padding */
-    border-radius: 25px; /* Rounded corners for buttons */
-    font-size: 1rem; /* Sets font size */
-    font-weight: bold; /* Makes the text bold */
-    letter-spacing: 0.05rem; /* Space between letters for a clean look */
-    transition: background-color 0.3s ease; /* Transition for hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background: white;
+    color: #333;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    background-color: #a7d7a9; /* Lighter green on hover for interactivity */
-    color: #333; /* Maintains dark text color */
+    background-color: #a7d7a9;
+    color: #333;
 }
 
 /* Services Section */
