@@ -319,7 +319,7 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        padding-top: 100px; /* Increase padding to ensure space for the logo and title */
+        padding-top: 20px; /* Increase padding to ensure space for the logo and title */
     }
 
     .header-top {
@@ -328,18 +328,18 @@ padding: 1rem 0;
     }
 
     #header-logo {
-        position: absolute; /* Maintain absolute positioning */
-        top: 0px; /* Position the logo slightly lower from the top */
+        position: absolute; /* Absolute positioning to place the logo */
+        top: 20px; /* Adjust as necessary, can be set to '0' to remove space */
         left: 50%; /* Center the logo horizontally */
-        transform: translateX(-50%); /* Center align the logo */
-        height: 70px; /* Adjust the logo size as needed */
+        transform: translateX(-50%); /* Align the logo perfectly center */
+        height: 70px; /* Keep your logo size or adjust as necessary */
         width: auto; /* Maintain aspect ratio */
         z-index: 10; /* Ensure the logo is above the other elements */
     }
 
     h1 {
         position: relative; /* Change to relative positioning */
-        top: 20px; /* Move the title below the logo */
+        top: initial; /* Remove specific top positioning */
         left: 0; /* Align to the left edge */
         transform: none; /* Remove the transform property */
         width: 100%; /* Full width */
@@ -347,11 +347,11 @@ padding: 1rem 0;
         padding: 0; /* Adjust padding as necessary */
         text-align: center; /* Center the title text */
         z-index: 9; /* Below the logo */
-        margin-top: 70px; /* Adjust this value to move the title down below the logo */
+        margin-top: 90px; /* Adjust this value to position the title below the logo */
     }
 
     nav {
-        padding-top: 10px; /* Adjust the space between the title and the nav */
+        padding-top: 0; /* Remove additional padding */
     }
 
     nav ul {
