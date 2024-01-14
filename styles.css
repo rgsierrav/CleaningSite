@@ -324,25 +324,26 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        /* Adjust the padding to fit the new image size if needed */
-        padding: 0; /* You might not need padding if the image contains it */
-        background: #8FBC8F; /* Optional: only needed if there's extra space around the image */
-        text-align: center;
+        background-color: transparent; /* Since the image has a white background, the header can be transparent */
+        padding: 0; /* Adjust padding as needed for the header */
+        text-align: center; /* Center-align elements */
     }
 
-    /* Top part of the header with logo and title */
     .header-top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* No longer need padding-bottom if the image includes space */
+        display: block; /* A block display will stack children vertically */
+        width: 100%; /* Ensure the container spans the full width */
+        margin: auto; /* Center the container */
     }
 
     #header-image {
-        width: 100%; /* Full width to scale with the header */
+        width: 80%; /* Resize the image to 80% of its container for a smaller appearance */
+        max-width: 400px; /* Maximum width can be set to a fixed value */
         height: auto; /* Maintain aspect ratio */
-        /* Margin is not necessary unless you want to push the navigation down */
+        background-color: white; /* White background */
+        border-radius: 10px; /* Rounded corners for the white background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: a shadow for some depth */
+        margin: 20px auto; /* Add some margin to the top and bottom, and auto center horizontally */
+        display: block; /* Block display for proper margins */
     }
 
     /* Navigation menu styling */
