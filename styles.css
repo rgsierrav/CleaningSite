@@ -339,7 +339,7 @@ padding: 1rem 0;
 
     h1 {
         position: absolute; /* Absolute positioning to place the title */
-        top: 80px; /* Adjust the top position to below the logo */
+        top: 10px; /* Adjust the top position to below the logo */
         left: 50%; /* Center the title horizontally */
         transform: translateX(-50%); /* Adjust horizontally */
         width: 100%; /* Full width to center the text */
