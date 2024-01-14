@@ -1,6 +1,7 @@
 header {
     background-color: #8FBC8F; /* Green background */
-    position: relative; /* Needed for absolute positioning of the logo */
+    padding: 0; /* Adjust padding as necessary */
+    text-align: center;
 }
 
 .header-top {
@@ -11,14 +12,14 @@ header {
 }
 
 #header-image {
-    width: 60%; /* Adjust the width to suit your desktop layout */
-    max-width: 600px; /* Set a max-width that looks good on larger screens */
+    width: 60%; /* Adjust width as necessary for desktop */
+    max-width: 600px; /* Adjust max-width as necessary */
     height: auto; /* Maintain aspect ratio */
     background-color: white; /* White background for the image */
-    border-radius: 15px; /* Rounded corners for the image background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    margin: 20px auto; /* Center the image with automatic margins */
-    display: block; /* Block display for proper centering */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Block display */
 }
 
 nav {
@@ -323,31 +324,31 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        padding: 0; /* Remove padding to align the image to the top */
         background-color: #8FBC8F; /* Retain the green background */
+        padding: 0; /* Remove padding to align the image to the top */
         text-align: center;
     }
 
     .header-top {
-        display: block; /* A block display will stack children vertically */
         width: 100%; /* Ensure the container spans the full width */
         margin: auto; /* Center the container */
     }
 
     #header-image {
-        width: 80%; /* Resize the image to 80% of its container for a smaller appearance */
+        width: 80%; /* Resize the image to 80% of its container */
         max-width: 400px; /* Maximum width can be set to a fixed value */
         height: auto; /* Maintain aspect ratio */
-        background-color: #f4f4f4; /* White background */
-        border-radius: 10px; /* Rounded corners for the white background */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: a shadow for some depth */
-        margin: 20px auto; /* Add some margin to the top and bottom, and auto center horizontally */
-        display: block; /* Block display for proper margins */
+        background-color: white; /* White background for the image */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        margin: 0 auto; /* Center horizontally and remove any default margin */
+        display: block; /* Ensure it's a block element */
     }
 
     /* Navigation menu styling */
     nav {
-        width: 100%; /* Full width to center align the navigation */
+        width: 100%;
+        margin-top: 0; /* Remove margin-top if not needed */
     }
 
     nav ul {
