@@ -16,7 +16,7 @@ header {
     width: 100px; /* Set a fixed width for the logo */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Absolute positioning relative to the header */
-    left: 50px; /* Position logo from the left */
+    left: 70px; /* Position logo from the left */
     top: 50%; /* Align vertically */
     padding-top: 10px;
     transform: translateY(-50%); /* Center logo vertically */
