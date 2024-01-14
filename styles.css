@@ -317,38 +317,42 @@ text-align: center;
 padding: 1rem 0;
 }
 
-/* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
+    header {
+        padding-top: 60px; /* Increase the padding to push down the text */
+        padding-bottom: 20px; /* Increase the padding to give space below */
+        position: relative; /* Make sure position is relative for absolute child elements */
+    }
+
     .header-top {
-        flex-direction: column; /* Keep stacked layout for mobile */
+        flex-direction: column; /* Stack logo and text for a vertical layout */
+        align-items: center; /* Center align items */
+        padding-top: 0; /* Remove extra padding if not needed */
+        padding-bottom: 0; /* Remove extra padding if not needed */
     }
 
     #header-logo {
-        order: -1; /* Logo comes first */
-        height: 50px; /* Adjust logo size for mobile */
-        width: auto; /* Maintain aspect ratio */
-        padding-bottom: 10px;
+        position: absolute; /* Keep the logo absolutely positioned */
+        top: 10px; /* Adjust this value to move the logo down */
+        left: 50%; /* Center the logo */
+        transform: translateX(-50%) translateY(0); /* Adjust horizontal position */
+        height: 50px; /* Adjust the logo size for mobile */
+        width: auto; /* Adjust width while maintaining aspect ratio */
+        padding-top: 0; /* Remove padding-top if not needed */
     }
 
     h1 {
-        font-size: 1.2rem; /* Smaller font size for mobile */
-        padding: 0 15px; /* Adjust padding for mobile */
-        text-align: center; /* Center title */
-        width: calc(100% - 30px); /* Subtract padding from the width */
-        line-height: 1.2; /* Adjust line height as needed */
+        font-size: 1.2rem; /* Adjust font size for mobile */
+        margin-top: 10px; /* Add some space above the h1 */
+        padding: 0 20px; /* Add padding on the sides */
     }
 
     nav ul {
-        width: 100%;
-        padding: 0;
-    }
-
-    nav ul li {
-        text-align: center;
-        padding: 5px 0; /* Add padding to increase tap area */
+        flex-direction: column; /* Stack the navigation items vertically */
+        width: 100%; /* Full width for the nav */
     }
 
     nav ul li a {
-        padding: 5px; /* Add padding to increase tap area */
+        padding: 10px; /* Larger tap area for links */
     }
 }
