@@ -22,12 +22,6 @@ header {
     transform: translateY(-50%); /* Center logo vertically */
 }
 
-h1 {
-    margin: 0; /* Removes default margin from h1 */
-    padding: 0; /* No padding needed as we center using flex */
-    flex-grow: 1; /* Allows the title to grow and fill available space */
-}
-
 nav {
     text-align: center; /* Centers the navigation */
 }
