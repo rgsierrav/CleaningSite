@@ -347,7 +347,7 @@ padding: 1rem 0;
         padding: 0; /* Adjust padding as necessary */
         text-align: center; /* Center the title text */
         z-index: 9; /* Below the logo */
-        margin-top: 70px; /* Adjust this value to move the title down below the logo */
+        margin-top: 30px; /* Adjust this value to move the title down below the logo */
     }
 
     nav {
