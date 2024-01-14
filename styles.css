@@ -324,9 +324,9 @@ padding: 1rem 0;
 
 @media screen and (max-width: 768px) {
     header {
-        background-color: transparent; /* Since the image has a white background, the header can be transparent */
-        padding: 0; /* Adjust padding as needed for the header */
-        text-align: center; /* Center-align elements */
+        padding: 0; /* Remove padding to align the image to the top */
+        background-color: #8FBC8F; /* Retain the green background */
+        text-align: center;
     }
 
     .header-top {
