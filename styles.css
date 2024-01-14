@@ -6,22 +6,23 @@ header {
 .header-top {
     display: flex; /* Aligns children (logo and title) in a row */
     align-items: center; /* Centers children vertically */
-    justify-content: flex-start; /* Aligns children to the start of the flex container */
+    justify-content: flex-start; /* Aligns children to the start, which is left */
     padding-bottom: 10px; /* Adds some space above the navigation */
 }
 
 #header-logo {
     height: 50px; /* Adjust the logo size as needed */
-    position: absolute; /* Absolute positioning relative to header */
-    left: 20px; /* Adjust based on your padding */
-    top: 50%; /* Centers vertically */
-    transform: translateY(-50%); /* Offset by half its height for perfect centering */
     background-color: #ffffff; /* White background for the logo */
+    padding-right: 20px; /* Adds some space between the logo and the title */
 }
 
 h1 {
     margin: 0; /* Removes default margin from h1 */
-    padding-left: 70px; /* Adds padding to make space for the logo */
+    padding: 0 0 0 60px; /* Adds padding on the left to make space for the logo */
+}
+
+nav {
+    text-align: center; /* Centers the navigation */
 }
 
 /* Services Section */
