@@ -38,7 +38,7 @@ nav ul {
     margin: 0;
     display: flex; /* Horizontal navigation for desktop */
     justify-content: center;
-    align-items: center; /* Add this to vertically align the flex items if needed */
+    /* align-items: center; Add this to vertically align the flex items if needed */
 }
 
 nav ul li {
