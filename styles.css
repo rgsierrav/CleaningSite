@@ -350,7 +350,7 @@ padding: 1rem 0;
     }
 
     #header-image {
-        width: 80%; /* Adjust the width to control the size of the image on mobile */
+        width: 50%; /* Adjust the width to control the size of the image on mobile */
         max-width: 300px; /* Maximum width to ensure the image is not too big */
         height: auto; /* Maintain aspect ratio */
         background-color: white; /* White background for the image */
