@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     flipCards.forEach(function(card) {
         // Select both buttons in the card
         var flipToFrontButton = card.querySelector('.learn-more-btn');
-        var flipToBackButton = card.querySelector('.flip-back-btn');
+        var flipToBackButton = card.querySelector('.flip-button-back');
 
         // Flip to back side
         flipToFrontButton.addEventListener('click', function() {
