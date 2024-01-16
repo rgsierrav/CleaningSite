@@ -224,6 +224,7 @@ h2 {
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 0 1 auto; /* Allow the button to grow and shrink */
+    margin-bottom: auto;
 }
 
 .learn-more-btn:hover {
