@@ -81,6 +81,9 @@ nav ul li a:hover {
 }
 
 .service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will space out the image/text and the button */
     text-align: center;
     padding: 10px;
     background-color: #fff;
@@ -206,7 +209,7 @@ h2 {
 }
 
 .learn-more-btn {
-    margin-top: 10px;
+    margin-top: auto; /* This will push the button to the bottom of the container */
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
     padding: 10px 20px;
@@ -228,6 +231,7 @@ h2 {
 /* Container for the flip effect */
 .flip-card {
     perspective: 1000px; /* Depth setting for 3D effect */
+    min-height: 350px; /* Adjust as needed */
 }
 
 /* Flip card inner to perform the flip */
