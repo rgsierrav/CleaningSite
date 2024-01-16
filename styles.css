@@ -203,6 +203,25 @@ h2 {
     margin-top: 10px;
 }
 
+.learn-more-btn {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1rem; /* Size of the font */
+    font-weight: bold; /* Make the text bold */
+    letter-spacing: 0.05rem; /* Spacing between letters */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.1); /* Shadow for depth */
+}
+
+.learn-more-btn:hover {
+    background-color: #367C39; /* Slightly darker green on hover for interactive feel */
+}
+
 /* Reviews Section */
 .review {
     background-color: #A9C9A4;
