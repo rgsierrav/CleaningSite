@@ -477,4 +477,13 @@ padding: 1rem 0;
         background-color: #a7d7a9; /* Lighter green on hover for interactive feel */
         color: #333; /* Maintain dark text color */
     }
+
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+    }
+
+    .service-item p {
+        font-size: smaller; /* Adjust font size for smaller screens */
+    }
 }
