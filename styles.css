@@ -185,18 +185,19 @@ h2 {
     gap: auto;
     justify-content: center;
     max-width: 60%;
-    margin: auto;
+    margin: 0 auto; /* Centering grid container */
 }
 
+/* Individual Service Item Styles */
 .service-item {
-    text-align: center;
-    padding: 10px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the image and description vertically */
-    justify-content: space-between; /* This will space out the image/text and the button */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
 }
 
 .service-item img {
@@ -211,27 +212,27 @@ h2 {
 
 /* Learn more button */
 .learn-more-btn {
-    margin-top: auto; /* This will push the button to the bottom of the container */
     background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    padding: 10px 20px;
     border: none;
     border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    flex: 0 1 auto;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 0 1 auto; /* Allow the button to grow and shrink */
     margin-bottom: auto;
+    margin-top: auto; /* Push button to bottom */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
 .learn-more-btn:hover {
     background-color: #367C39; /* Slightly darker green on hover */
 }
 
-/* Flip Card Actions */
+/* Flip Card Styles */
 .flip-card {
     perspective: 1000px;
 }
@@ -267,6 +268,7 @@ h2 {
 .flipped {
     transform: rotateY(180deg);
 }
+
 /* Reviews Section */
 .review {
     background-color: #A9C9A4;
