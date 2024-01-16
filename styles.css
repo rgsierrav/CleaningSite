@@ -257,6 +257,9 @@ h2 {
 /* Front content */
 .flip-card-front {
     z-index: 2; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
     /* You may want to add styling here consistent with .service-item */
 }
 
