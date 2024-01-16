@@ -191,6 +191,8 @@ h2 {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the image and description vertically */
 }
 
 .service-item img {
@@ -216,6 +218,7 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 1 auto;
 }
 
 .learn-more-btn:hover {
