@@ -186,6 +186,7 @@ h2 {
     justify-content: center;
     max-width: 60%;
     margin: auto;
+    margin-bottom: auto;
 }
 
 .service-item {
