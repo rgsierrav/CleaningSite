@@ -196,6 +196,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack the image and description vertically */
+    justify-content: space-between; /* This will space out the image/text and the button */
 }
 
 .service-item img {
