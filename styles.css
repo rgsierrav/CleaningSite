@@ -121,7 +121,7 @@ h2 {
     margin-top: 10px;
 }
 
-.learn-more-btn {
+.learn-more-btn, .flip-button-back {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -146,6 +146,7 @@ h2 {
     position: relative;
     z-index: 1; /* Add a stacking context */
     min-height: 320px; /* Adjust this value based on your content */
+    font-weight: bold;
 }
 
 .flip-card-inner {
@@ -176,8 +177,8 @@ h2 {
 }
 
 .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: #bde3a5;
+    color: rgb(52, 130, 6);
     transform: rotateY(180deg);
     padding-bottom: 10px; /* Add padding to ensure space for the button */
 }
