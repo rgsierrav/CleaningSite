@@ -1,121 +1,4 @@
-/* Global styles for the header */
-header {
-    background-color: #8FBC8F; /* Green background */
-    text-align: center;
-    position: relative;
-}
-
-.header-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack the image and nav vertically on all views */
-}
-
-/* Styles for the header image with a smaller white box */
-#header-image {
-    width: 250px; /* Let the image be as wide as it needs to be */
-    max-width: 250px; /* Maximum width for larger screens, adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    background-color: white; /* White background for the image */
-    border-radius: 10px; /* Rounded corners for the white background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    margin: 20px auto; /* Center the image */
-    display: block; /* Block display */
-    padding: 5px; /* Smaller white box */
-}
-
-/* Desktop navigation styles */
-nav {
-    text-align: center;
-    /* If using flexbox, ensure the container has a height */
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    /* display: flex; Horizontal navigation for desktop */
-    justify-content: center;
-    /* align-items: center; Add this to vertically align the flex items if needed */
-}
-
-nav ul li {
-    margin: 0 20px; /* Increase margin to see if it helps */
-}
-
-nav ul li a {
-    background: white; /*Ensures background is white */
-    color: #333 !important; /* Forces text color to dark if being overridden */
-    padding: 0.8rem 2rem; /* Sufficient padding for clickable area */
-    border-radius: 25px; /* Rounded corners for buttons */
-    font-size: 1rem; /* Ensures text is not too small */
-    font-weight: bold; /* Bold text for readability */
-    letter-spacing: 0.05rem; /* Slight spacing between letters */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    display: inline-block; /* Ensures the link is treated as a block-level element */
-    overflow: visible; /* Ensures text is not cut off */
-    z-index: 1; /* Ensures the link is above other content */
-}
-
-nav ul li a:hover {
-    background-color: #a7d7a9;
-    color: #333;
-}
-
-/* Services Section */
-#services {
-    text-align: center; /* Center content inside the services section */
-    padding: 20px;
-    margin: 20px auto; /* Center the section on the page */
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Adjust number of columns based on number of services */
-    gap: 20px;
-    justify-content: center;
-    max-width: 100%; /* Ensure grid takes full width */
-    margin: auto;
-}
-
-.service-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* This will space out the image/text and the button */
-    text-align: center;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.service-item p {
-    margin-top: 10px; /* Spacing above the description */
-}
-
-.service-item button {
-    margin-top: 10px;
-    background-color: #8FBC8F;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.service-item button:hover {
-    background-color: #7AA67D;
-}
-
-/* Basic Reset */
+/* Global styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -129,27 +12,40 @@ body {
     color: #333333;
 }
 
-/* Header */
+/* Header styles */
 header {
     background: #8FBC8F;
     color: white;
     text-align: center;
     padding: 1rem 0;
+    position: relative;
 }
 
 .header-top {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #header-image {
-    max-width: 100%; /* Ensures the image is responsive and fits the container */
-    height: auto; /* Maintains the aspect ratio */
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 5px;
+    display: block;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -158,12 +54,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    background: white;
+    color: #333;
     text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
     font-weight: bold;
+    letter-spacing: 0.05rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }
 
-/* Sections */
+nav ul li a:hover {
+    background-color: #a7d7a9;
+    color: #333;
+}
+
+/* Section styles */
 section {
     padding: 20px;
     margin: 20px;
@@ -181,14 +88,13 @@ h2 {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
-    gap: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
     justify-content: center;
     max-width: 60%;
-    margin: 0 auto; /* Centering grid container */
+    margin: 0 auto;
 }
 
-/* Individual Service Item Styles */
 .service-item {
     background-color: #fff;
     border-radius: 5px;
@@ -201,35 +107,32 @@ h2 {
 }
 
 .service-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .service-item p {
     margin-top: 10px;
 }
 
-/* Learn more button */
 .learn-more-btn {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: white;
+    padding: 10px 20px;
     cursor: pointer;
-    flex: 0 1 auto;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
-    margin-bottom: auto;
-    margin-top: auto; /* Push button to bottom */
-    padding: 10px 20px;
     transition: background-color 0.3s ease;
+    margin-top: auto;
 }
 
 .learn-more-btn:hover {
-    background-color: #367C39; /* Slightly darker green on hover */
+    background-color: #367C39;
 }
 
 /* Flip Card Styles */
@@ -239,24 +142,28 @@ h2 {
 
 .flip-card-inner {
     position: relative;
-    width: 300px;
-    height: 200px;
-    margin: auto;
     text-align: center;
-    transition: transform 0.6s;
     transform-style: preserve-3d;
+    transition: transform 0.6s;
+    width: 100%;
+    height: auto;
 }
 
 .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .flip-card-back {
