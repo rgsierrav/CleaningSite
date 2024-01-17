@@ -93,17 +93,19 @@ h2 {
     justify-content: center;
     max-width: 60%;
     margin: 0 auto;
+    align-content: start;
 }
 
-.service-item {
+.service-item, .flip-card-front, .flip-card-back {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
-    text-align: center;
 }
 
 .service-item img {
@@ -138,6 +140,7 @@ h2 {
 /* Flip Card Styles */
 .flip-card {
     perspective: 1000px;
+    margin-bottom: 20px; /* Ensures space between elements */
 }
 
 .flip-card-inner {
@@ -147,6 +150,8 @@ h2 {
     transition: transform 0.6s;
     width: 100%;
     height: auto;
+    margin-bottom: 20px; /* Ensures space between elements */
+
 }
 
 .flip-card-front, .flip-card-back {
