@@ -92,7 +92,6 @@ nav.shrink ul li a {
 .fixed-nav {
     position: fixed;
     top: 0; /* Stick to the top */
-    padding: 0.5rem 0; /* Reduced padding to make the nav smaller */
 }
 
 .fixed-nav ul li a {
@@ -369,10 +368,6 @@ padding: 1rem 0;
         text-align: center;
     }
 
-    .header-top {
-        padding: 10px 0; /* Adds padding at the top and bottom around the header image */
-    }
-
     #header-image {
         width: 50%; /* Adjust the width to control the size of the image on mobile */
         max-width: 300px; /* Maximum width to ensure the image is not too big */
@@ -385,41 +380,48 @@ padding: 1rem 0;
         box-sizing: border-box; /* Ensures padding is included in the width */
     }
 
-    /* Navigation menu styling for mobile */
-    nav {
+     /* Navigation menu styling for mobile */
+     nav {
         width: 100%; /* Full width for the navigation */
-        margin-top: 10px; /* Space between the image and navigation */
+        background-color: #8FBC8F; /* Optional: Set background if nav is fixed */
     }
 
     nav ul {
-        padding: 0; /* Remove default padding */
-        margin: 10px 0; /* Space between the image and the navigation items */
-        list-style: none; /* No bullets for the list */
         display: flex; /* Use flexbox for layout */
-        flex-direction: column; /* Stack the nav items vertically */
-        align-items: center; /* Center-align the nav items */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        padding: 10px 0; /* Padding above and below the nav list */
+        flex-direction: row;
+        align-items: center; /* Align items vertically */
     }
 
     nav ul li {
-        margin: 10px 0; /* Margin between each nav item */
+        margin-right: 0;
+        margin-bottom: 10px; /* Space between items when they wrap */
+        width: auto;
     }
 
     nav ul li a {
-        background: white; /* White background for the nav buttons */
-        color: #333; /* Dark color for the text */
-        padding: 0.8rem 2rem; /* Padding inside the nav buttons */
-        border-radius: 25px; /* Rounded corners for the buttons */
-        font-size: 1rem; /* Font size for the text */
-        font-weight: bold; /* Bold font weight for the text */
-        letter-spacing: 0.05rem; /* Space between letters for a clean look */
-        transition: background-color 0.3s ease; /* Smooth transition for hover effects */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        display: block; /* Ensure the entire area is clickable */
+        background: white;
+        color: #333;
+        padding: 10px 15px; /* Adjust padding for mobile */
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        /* Ensure text is centered and button doesn't stretch too much */
+        text-align: center;
+        white-space: nowrap; /* Prevent text from wrapping */
     }
 
     nav ul li a:hover {
         background-color: #a7d7a9; /* Lighter green on hover for interactive feel */
         color: #333; /* Maintain dark text color */
+    }
+
+    /* Add padding to the body to prevent content from hiding behind the nav */
+    body.fixed-nav-padding {
+        padding-top: 60px; /* Adjust this value based on the nav's height when shrunk */
     }
 
     /* Services Section */
