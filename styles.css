@@ -46,7 +46,7 @@ nav {
     background: #8FBC8F; /* Example background color */
     top: 0;
     z-index: 1000; /* Make sure it's above other content */
-    transition: padding 0.3s, top 0.3s; /* Smooth transition for top position and padding */
+    transition: top 0.3s ease;
 }
 
 nav ul {
