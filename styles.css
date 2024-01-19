@@ -378,7 +378,7 @@ padding: 1rem 0;
 
     .services-grid {
         /* Adjust grid layout to 3 columns */
-        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr); /* Use flexible fractions */
         margin: 0 auto; /* Center the grid */
         padding: 0 15px; /* Add padding to prevent overflow */
         max-width: 100%; /* Limit the maximum width */
