@@ -28,20 +28,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
         headerBottom = header.offsetTop + header.offsetHeight;
     };
 
-    // Add resize event listener to update headerBottom value
-    window.addEventListener('resize', updateHeaderBottom);
+    // Debounce function to optimize performance
+    const debounce = (func, delay) => {
+        let inDebounce;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(inDebounce);
+            inDebounce = setTimeout(() => func.apply(context, args), delay);
+        };
+    };
 
-    window.addEventListener('scroll', function() {
+    // Add resize event listener with debounce
+    window.addEventListener('resize', debounce(updateHeaderBottom, 100));
+
+    window.addEventListener('scroll', debounce(function() {
         const headerImage = document.getElementById('header-image'); // Assuming your header image has this ID
         if (window.scrollY > headerBottom) {
             nav.classList.add('fixed-nav');
-            headerImage.classList.add('fixed-nav-hidden');
+            if (headerImage) {
+                headerImage.classList.add('fixed-nav-hidden');
+            }
             document.body.classList.add('fixed-nav-padding');
         } else {
             nav.classList.remove('fixed-nav');
-            headerImage.classList.remove('fixed-nav-hidden');
+            if (headerImage) {
+                headerImage.classList.remove('fixed-nav-hidden');
+            }
             document.body.classList.remove('fixed-nav-padding');
         }
-    });    
+    }, 100));    
 });
-

@@ -425,7 +425,8 @@ padding: 1rem 0;
     }
 
     nav ul li a {
-        padding: 0.5rem 1rem; /* Smaller buttons in the nav */
+        padding: 0.3rem 0.5rem; /* Smaller buttons in the nav */
+        text-align: center;
     }
 
     .services-grid {
@@ -438,5 +439,3 @@ padding: 1rem 0;
     }
     /* Further adjust navigation, font sizes, and element sizes as necessary */
 }
-
-/* Optionally, you can add more specific media queries for larger screens if needed */
