@@ -40,17 +40,26 @@ header {
     display: block;
 }
 
-/* Navigation styles */
+/* Base Navigation styles */
+nav {
+    width: 100%;
+    background: #8FBC8F; /* Example background color */
+    top: 0;
+    z-index: 1000; /* Make sure it's above other content */
+    transition: padding 0.3s, top 0.3s; /* Smooth transition for top position and padding */
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
-    text-align: center;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 10px; /* Adjust spacing between nav items */
 }
 
 nav ul li a {
@@ -63,12 +72,38 @@ nav ul li a {
     letter-spacing: 0.05rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: inline-block;
+    transition: all 0.3s; /* Smooth transition for shrink effect */
 }
 
 nav ul li a:hover {
     background-color: #a7d7a9;
     color: #333;
 }
+
+/* Shrink class added to nav when the page is scrolled */
+nav.shrink {
+    padding: 0.5rem 0; /* Reduced padding to make the nav smaller */
+}
+
+nav.shrink ul li a {
+    padding: 0.5rem 1.5rem; /* Smaller padding for a "shrink" effect */
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0; /* Stick to the top */
+    padding: 0.5rem 0; /* Reduced padding to make the nav smaller */
+}
+
+.fixed-nav ul li a {
+    padding: 0.5rem 1.5rem; /* Smaller padding for a "shrink" effect */
+}
+
+/* Add padding-top to the main content when navigation is fixed */
+body.fixed-nav-padding {
+    padding-top: 70px; /* Adjust this value to match the nav's height */
+}
+
 
 /* Section styles */
 section {

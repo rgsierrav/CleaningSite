@@ -41,3 +41,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const nav = document.querySelector('nav');
+    const header = document.querySelector('header');
+    let headerBottom = header.offsetTop + header.offsetHeight;
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > headerBottom) {
+            nav.classList.add('fixed-nav');
+            document.body.classList.add('fixed-nav-padding');
+        } else {
+            nav.classList.remove('fixed-nav');
+            document.body.classList.remove('fixed-nav-padding');
+        }
+    });
+});
