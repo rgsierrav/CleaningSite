@@ -388,23 +388,21 @@ padding: 1rem 0;
 
     nav ul {
         display: flex; /* Use flexbox for layout */
-        justify-content: center; /* Center items horizontally */
+        justify-content: space-around; /* Distribute items evenly */
         flex-wrap: nowrap; /* Prevent wrapping */
         padding: 10px 0; /* Padding above and below the nav list */
-        flex-direction: row;
-        align-items: center; /* Align items vertically */
+        list-style: none; /* No bullets for the list */
     }
 
     nav ul li {
         margin-right: 0;
         margin-bottom: 10px; /* Space between items when they wrap */
-        width: auto;
     }
 
     nav ul li a {
         background: white;
         color: #333;
-        padding: 10px 15px; /* Adjust padding for mobile */
+        padding: 8px 12px; /* Adjust padding for mobile */
         border-radius: 25px;
         font-weight: bold;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
