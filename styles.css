@@ -402,7 +402,7 @@ padding: 1rem 0;
 /* Media queries for mobile screens */
 @media screen and (max-width: 480px) {
     /* Adjust styles for mobile screens */
-    .header-top, .services-grid, nav ul {
+    .header-top {
         flex-direction: column;
     }
 
@@ -412,6 +412,12 @@ padding: 1rem 0;
 
     body {
         font-size: 0.9rem; /* Smaller font size for readability */
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep navigation horizontal */
+        justify-content: center;
+        margin: 0 5px; /* Adjust margin for nav */
     }
 
     nav ul li {
