@@ -361,73 +361,78 @@ text-align: center;
 padding: 1rem 0;
 }
 
+/* Media queries for tablet screens */
 @media screen and (max-width: 768px) {
-    header {
-        background-color: #8FBC8F; /* Retain the green background */
-        padding: 0; /* Remove padding to align the image to the top */
-        text-align: center;
+    /* Adjust styles for tablet screens */
+    .header-top {
+        flex-direction: column;
     }
 
     #header-image {
-        width: 50%; /* Adjust the width to control the size of the image on mobile */
-        max-width: 300px; /* Maximum width to ensure the image is not too big */
-        height: auto; /* Maintain aspect ratio */
-        background-color: white; /* White background for the image */
-        border-radius: 10px; /* Rounded corners for the white background */
-        margin: 10px auto; /* Add margin at the top and bottom, auto for horizontal centering */
-        display: block; /* Block display for proper margins */
-        padding: 10px; /* Adjust the padding to control the size of the white box */
-        box-sizing: border-box; /* Ensures padding is included in the width */
+        width: 200px; /* Moderately smaller image */
     }
 
-     /* Navigation menu styling for mobile */
-     nav {
-        width: 100%; /* Full width for the navigation */
-        background-color: #8FBC8F; /* Optional: Set background if nav is fixed */
+    body {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+
+    .services-grid {
+        /* Adjust grid layout to 3 columns */
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        margin: 0 auto; /* Center the grid */
+        padding: 0 15px; /* Add padding to prevent overflow */
+        max-width: 100%; /* Limit the maximum width */
+        box-sizing: border-box; /* Include padding and border in the width */
+    }
+
+    .service-item, .flip-card-front, .flip-card-back {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem; /* Moderately smaller heading */
     }
 
     nav ul {
-        display: flex; /* Use flexbox for layout */
-        justify-content: space-around; /* Distribute items evenly */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        padding: 10px 0; /* Padding above and below the nav list */
-        list-style: none; /* No bullets for the list */
+        /* Keep the navigation horizontal */
+        flex-direction: row;
+        justify-content: center; /* Center the items horizontally */
+    }
+}
+
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for mobile screens */
+    .header-top, .services-grid, nav ul {
+        flex-direction: column;
+    }
+
+    #header-image {
+        width: 150px; /* Smaller image for mobile */
+    }
+
+    body {
+        font-size: 0.9rem; /* Smaller font size for readability */
     }
 
     nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px; /* Space between items when they wrap */
+        margin: 5px; /* Reduce margin for nav items */
     }
 
     nav ul li a {
-        background: white;
-        color: #333;
-        padding: 8px 12px; /* Adjust padding for mobile */
-        border-radius: 25px;
-        font-weight: bold;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
-        /* Ensure text is centered and button doesn't stretch too much */
-        text-align: center;
-        white-space: nowrap; /* Prevent text from wrapping */
+        padding: 0.5rem 1rem; /* Smaller buttons in the nav */
     }
 
-    nav ul li a:hover {
-        background-color: #a7d7a9; /* Lighter green on hover for interactive feel */
-        color: #333; /* Maintain dark text color */
-    }
-
-    /* Add padding to the body to prevent content from hiding behind the nav */
-    body.fixed-nav-padding {
-        padding-top: 60px; /* Adjust this value based on the nav's height when shrunk */
-    }
-
-    /* Services Section */
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+        grid-template-columns: 1fr; /* Single column grid */
     }
 
-    .service-item p {
-        font-size: smaller; /* Adjust font size for smaller screens */
+
+    h2 {
+        font-size: 1.3rem; /* Smaller heading size */
     }
+    /* Further adjust navigation, font sizes, and element sizes as necessary */
 }
+
+/* Optionally, you can add more specific media queries for larger screens if needed */
