@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/path/to/reviews.json') // Update the path to where your JSON file is located
+    fetch('reviews.json') // Update the path to where your JSON file is located
         .then(response => response.json())
         .then(reviews => {
             const reviewsContainer = document.getElementById('reviews-container');
