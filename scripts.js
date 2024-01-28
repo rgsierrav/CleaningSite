@@ -32,16 +32,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener('resize', updateHeaderBottom);
 
     window.addEventListener('scroll', function() {
-        const headerImage = document.getElementById('header-image');
         if (window.scrollY > headerBottom) {
             nav.classList.add('fixed-nav');
-            // headerImage.classList.add('fixed-nav-hidden'); // Remove if you don't want to hide the header image
-            // document.body.classList.add('fixed-nav-padding'); // Adjust if you don't want extra padding
+            // Apply animations or style changes only on desktop screens
+            if (window.innerWidth > 768) {
+                // Add any class or style changes for desktop screens here
+                // e.g., nav.classList.add('shrink');
+            }
         } else {
             nav.classList.remove('fixed-nav');
-            // headerImage.classList.remove('fixed-nav-hidden'); // Remove if you don't want to hide the header image
-            // document.body.classList.remove('fixed-nav-padding'); // Adjust if you don't want extra padding
+            // Revert changes for desktop screens when not scrolled past headerBottom
+            if (window.innerWidth > 768) {
+                // Revert any class or style changes for desktop screens here
+                // e.g., nav.classList.remove('shrink');
+            }
         }
     });    
 });
-
