@@ -401,6 +401,11 @@ padding: 1rem 0;
 
 /* Media queries for mobile screens */
 @media screen and (max-width: 480px) {
+    /* Override styles for fixed navigation to prevent changes on scroll */
+    .fixed-nav, nav.shrink {
+        padding: 1rem 0; /* Keep original padding */
+    }
+    
     /* Adjust styles for mobile screens */
     .header-top {
         flex-direction: column;
