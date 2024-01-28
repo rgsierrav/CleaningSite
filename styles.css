@@ -405,7 +405,17 @@ padding: 1rem 0;
     .fixed-nav, nav.shrink {
         padding: 1rem 0; /* Keep original padding */
     }
-    
+
+    /* Ensure the header image doesn't hide */
+    .fixed-nav-hidden {
+        display: block; /* Override any styles that may hide the header image */
+    }
+
+    /* Disable any additional padding added to the body when nav is fixed */
+    body.fixed-nav-padding {
+        padding-top: 0; /* No additional padding */
+    }
+
     /* Adjust styles for mobile screens */
     .header-top {
         flex-direction: column;
@@ -430,7 +440,8 @@ padding: 1rem 0;
     }
 
     nav ul li a {
-        padding: 0.3rem 0.5rem; /* Smaller buttons in the nav */
+        padding: 0.8rem 2rem; /* Smaller buttons in the nav */
+        font-size: 1rem; /* Keep original font size */
         text-align: center;
     }
 

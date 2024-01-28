@@ -32,16 +32,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener('resize', updateHeaderBottom);
 
     window.addEventListener('scroll', function() {
-        const headerImage = document.getElementById('header-image'); // Assuming your header image has this ID
-        if (window.scrollY > headerBottom) {
-            nav.classList.add('fixed-nav');
-            headerImage.classList.add('fixed-nav-hidden');
-            document.body.classList.add('fixed-nav-padding');
-        } else {
-            nav.classList.remove('fixed-nav');
-            headerImage.classList.remove('fixed-nav-hidden');
-            document.body.classList.remove('fixed-nav-padding');
+        const headerImage = document.getElementById('header-image');
+        if (window.innerWidth > 480) { // Only apply the fixed nav for screens wider than 480px
+            if (window.scrollY > headerBottom) {
+                nav.classList.add('fixed-nav');
+                headerImage.classList.add('fixed-nav-hidden');
+                document.body.classList.add('fixed-nav-padding');
+            } else {
+                nav.classList.remove('fixed-nav');
+                headerImage.classList.remove('fixed-nav-hidden');
+                document.body.classList.remove('fixed-nav-padding');
+            }
         }
-    });    
+    });   
 });
 
