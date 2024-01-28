@@ -46,7 +46,6 @@ nav {
     background: #8FBC8F; /* Example background color */
     top: 0;
     z-index: 1000; /* Make sure it's above other content */
-    /* transition: top 0.3s ease; */
 }
 
 nav ul {
@@ -72,7 +71,6 @@ nav ul li a {
     letter-spacing: 0.05rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: inline-block;
-    /* transition: all 0.3s; Smooth transition for shrink effect */
 }
 
 nav ul li a:hover {
@@ -80,20 +78,9 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Shrink class added to nav when the page is scrolled
-nav.shrink {
-    padding: 0.5rem 0; /* Reduced padding to make the nav smaller
-} nav.shrink ul li a {
-    padding: 0.5rem 1.5rem; Smaller padding for a "shrink" effect 
-} */
-
 .fixed-nav {
     position: fixed;
     top: 0; /* Stick to the top */
-}
-
-.fixed-nav ul li a {
-    padding: 0.5rem 1.5rem; /* Smaller padding for a "shrink" effect */
 }
 
 /* Add padding-top to the main content when navigation is fixed */
@@ -357,24 +344,6 @@ background: #2F4F4F;
 color: white;
 text-align: center;
 padding: 1rem 0;
-}
-
-/* Media queries for desktop screens */
-@media screen and (min-width: 769px) {
-    /* Define animations or style changes for desktop screens here */
-    nav.shrink {
-        padding: 0.5rem 0; /* Reduced padding to make the nav smaller */
-    }
-
-    nav.shrink ul li a {
-        padding: 0.5rem 1.5rem; /* Smaller padding for a "shrink" effect */
-    }
-
-    nav ul li a {
-        transition: all 0.3s; /* Smooth transition for shrink effect */
-    }
-
-    /* ... other styles for desktop screens ... */
 }
 
 /* Media queries for tablet screens */
