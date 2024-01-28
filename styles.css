@@ -396,6 +396,17 @@ padding: 1rem 0;
         flex-direction: row;
         justify-content: center; /* Center the items horizontally */
     }
+
+    .fixed-nav {
+        padding: 1rem 0; /* Keep original padding */
+        /* Ensure no other properties are causing the nav bar to widen */
+        /* ... other styles ... */
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem; /* Consistent padding */
+        /* ... other styles ... */
+    }
 }
 
 
@@ -405,7 +416,7 @@ padding: 1rem 0;
     .fixed-nav, nav.shrink {
         padding: 1rem 0; /* Keep original padding */
     }
-    
+
     /* Adjust styles for mobile screens */
     .header-top {
         flex-direction: column;
