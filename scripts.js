@@ -49,3 +49,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });    
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/path/to/reviews.json') // Update the path to where your JSON file is located
+        .then(response => response.json())
+        .then(reviews => {
+            const reviewsContainer = document.getElementById('reviews-container');
+            reviews.forEach(review => {
+                const reviewElement = document.createElement('div');
+                reviewElement.className = 'review';
+                reviewElement.innerHTML = `
+                    <p class="client-name">${review.name}</p>
+                    <div class="rating">${'&#9733;'.repeat(review.rating)}</div>
+                    <p class="review-content">"${review.comment}"</p>
+                `;
+                reviewsContainer.appendChild(reviewElement);
+            });
+        })
+        .catch(error => console.error('Error loading reviews:', error));
+});

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "John Doe",
+        "rating": 5,
+        "comment": "Excellent service, very professional and eco-friendly!"
+    },
+    {
+        "name": "Jane Smith",
+        "rating": 4,
+        "comment": "Great service, will definitely use again!"
+    }
+]

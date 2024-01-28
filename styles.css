@@ -254,6 +254,12 @@ h2 {
     color: #FFD700; /* Gold star color */
 }
 
+.star {
+    color: #FFD700; /* Gold color */
+    font-size: 1em; /* Adjust size as needed */
+    margin-right: 5px; /* Space out the stars */
+}
+
 /* Form Styling */
 form {
     width: 100%;
