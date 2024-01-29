@@ -202,7 +202,6 @@ h2 {
     padding: 15px; /* Adjusted padding for better spacing */
     overflow: auto; /* Adds scrollbar if content overflows */
     min-height: 320px; /* Example minimum height, adjust as needed */
-    text-align: justify; /* For better readability */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Spaces out content and button */
