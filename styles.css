@@ -201,7 +201,6 @@ h2 {
     transform: rotateY(180deg);
     padding: 15px; /* Adjusted padding for better spacing */
     overflow: auto; /* Adds scrollbar if content overflows */
-    word-wrap: break-word; /* Ensures long words don't break the layout */
     min-height: 320px; /* Example minimum height, adjust as needed */
     text-align: justify; /* For better readability */
     display: flex;
