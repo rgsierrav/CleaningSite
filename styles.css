@@ -199,7 +199,15 @@ h2 {
     background-color: #bde3a5;
     color: rgb(52, 130, 6);
     transform: rotateY(180deg);
-    padding-bottom: 10px; /* Add padding to ensure space for the button */
+    padding: 15px; /* Adjusted padding for better spacing */
+    overflow: auto; /* Adds scrollbar if content overflows */
+    word-wrap: break-word; /* Ensures long words don't break the layout */
+    min-height: 320px; /* Example minimum height, adjust as needed */
+    text-align: justify; /* For better readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spaces out content and button */
+    transition: transform 0.6s; /* Smooth flip transition */
 }
 
 .flipped {
