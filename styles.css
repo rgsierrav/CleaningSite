@@ -14,7 +14,7 @@ body {
 
 /* Header styles */
 header {
-    background: #8FBC8F;
+    background: #396539;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -43,7 +43,7 @@ header {
 /* Base Navigation styles */
 nav {
     width: 100%;
-    background: #8FBC8F; /* Example background color */
+    background: #396539; /* Example background color */
     top: 0;
     z-index: 1000; /* Make sure it's above other content */
 }
