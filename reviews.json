@@ -3,5 +3,10 @@
         "name": "Jen Wilkins",
         "rating": 5,
         "comment": "Perla is great! She does an amazing job and her communication is superb! 10/10 recommend her and her services."
+    },
+    {
+        "name": "Kay Nickey",
+        "rating": 5, 
+        "comment": "Professional, thorough, and works to meet needs of customer."
     }
 ]
