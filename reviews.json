@@ -8,5 +8,15 @@
         "name": "Kay Nickey",
         "rating": 5, 
         "comment": "Professional, thorough, and works to meet needs of customer."
+    },
+    {
+        "name": "Jessica",
+        "rating": 5, 
+        "comment": "Perla does a great job! She is trustworthy and very thorough with her cleaning. Products used are all natural. I recommend her for your cleaning needs."
+    },
+    {
+        "name": "Carol Border",
+        "rating": 5, 
+        "comment": "Such a professional for reasonable prices. Even changes bedding for me which I am unable to do. So pleasant and efficient. Love her."
     }
 ]
